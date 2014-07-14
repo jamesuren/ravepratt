@@ -28,11 +28,37 @@ if (Meteor.isClient) {
 
 	Template.journies.hasSelectedJourney = function ()	{
 		return Session.get("journey");
-	}
+	};
 
 	Template.journey.inStory = function () {
-		return Session.get("page");
-	}
+		var story = Session.get("story");
+		if (story == -1){
+			return false
+		}
+		return true;	
+	};
+	
+	Template.story.background = function () {
+		var journeyId = Session.get("journey");
+		var journey = Journies.findOne({_id: journeyId});
+		var quest = Session.get("quest");
+		var page = Session.get("story");
+		console.log(page);
+		var story = journey.quests[quest].story[page];
+		console.log("Loading story: " + story);
+		return story.background;
+	};
+	
+	Template.story.text = function () {
+		var journeyId = Session.get("journey");
+		var journey = Journies.findOne({_id: journeyId});
+		var quest = Session.get("quest");
+		var page = Session.get("story");
+		console.log(page);
+		var story = journey.quests[quest].story[page];
+		console.log("Loading story: " + story);
+		return story.text;
+	};
 
 	Template.quest.question = function () {
 		var journeyId = Session.get("journey");
@@ -62,18 +88,41 @@ if (Meteor.isClient) {
 		}
 	});
 	
+	Template.storyNextButton.events( {
+		'click': function () {
+			var journeyId = Session.get("journey");
+			var journey = Journies.findOne({_id: journeyId});
+			var quest = Session.get("quest");
+			var storyLength = journey.quests[quest].story.length;
+			var page = Session.get("story");
+			page = page + 1;
+			if (page < storyLength) {
+				Session.set("story", page);
+			}
+			else {
+				Session.set("story", -1);
+			}
+
+		}
+	});
+	
 	/*
 	 * Character selection
 	 */	
 	Template.characters.characters = function () {
-		// Ignore the quests field for the character list
-    	return Journies.find({}, {fields: {quests: 0}});
+    	return Journies.find();
 	};
+	
     Template.character.events( {
       	'click': function () {
-	        Session.set("journey", this._id);
-	        Session.set("quest", 0);
-			console.log("Selected character " + this.name);
+			if (this.quests)
+			{
+				// Only start journey for character with quests
+		        Session.set("journey", this._id);
+				Session.set("quest", 0);
+		        Session.set("story", 0);			
+			}
+			console.log("Selected character " + this.name);	
       	}
     });
 
@@ -91,6 +140,7 @@ if (Meteor.isServer) {
 				image: "coin.png",
 				answers: ["Sam", "John", "Henry", "Bill"],
 				correctAnswer: "Henry",
+				hint: "It is on your birth certificate...",
 				story: [{
 					background: "bg0.png",
 					text: ["Hello", "My name is Bill"]
@@ -106,6 +156,7 @@ if (Meteor.isServer) {
 				image: "coin.png",
 				answers: ["Blue", "Red", "Yellow", "Purple"],
 				correctAnswer: "Purple",
+				hint: "It begins with P",
 				story: [{
 					background: "bg0.png",
 					text: ["Hello", "My name is Bill"]
@@ -117,6 +168,9 @@ if (Meteor.isServer) {
 					text: ["Do you want", "to join the", "Navy?"]
 				}]					
 			}]
+     	}, {
+			name: "Strange Cartographer",
+     	   	image: "cartographer.png",
      	}];
     	for (var i = 0; i < data.length; i++) {
     		Journies.insert(data[i]);

@@ -32,8 +32,15 @@
 		{{#each text}}
 			<span>{{text}}</span>
 		{{/each}}
+		{{> storyNextButton}}
 	</div>
 </template>
+
+<template name="storyNextButton">
+	<div class="button">
+		<span>next</span>
+	</div>	
+</template>			
 
 <template name="quest">
 	<div class="quest">
@@ -66,6 +73,5 @@
 <template name="character">
 	<div class="character">
 		<img src="{{image}}">
-		<span>{{name}}</span>
 	</div>
 </template>
