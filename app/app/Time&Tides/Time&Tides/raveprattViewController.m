@@ -14,7 +14,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self loadRequestFromString:@"http://10.1.2.21:3000"];
+    [self loadRequestFromString:@"http://timeandtides.meteor.com/"];
     NSLog(@"HERE!");
 }
 
