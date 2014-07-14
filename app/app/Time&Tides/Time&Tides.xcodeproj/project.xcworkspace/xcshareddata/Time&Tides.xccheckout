@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>75CF8D77-96FF-4C92-A3F4-3BC03FB59B0A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Time&amp;Tides</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F5FC7CF-6B84-49BA-A93D-6A4EB49B4826</key>
+		<string>https://github.com/jamesuren/ravepratt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>app/app/Time&amp;Tides/Time&amp;Tides.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F5FC7CF-6B84-49BA-A93D-6A4EB49B4826</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jamesuren/ravepratt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F5FC7CF-6B84-49BA-A93D-6A4EB49B4826</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F5FC7CF-6B84-49BA-A93D-6A4EB49B4826</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ravepratt</string>
+		</dict>
+	</array>
+</dict>
+</plist>

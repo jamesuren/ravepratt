@@ -188,6 +188,48 @@ if (Meteor.isServer) {
     	for (var i = 0; i < data.length; i++) {
     		Journies.insert(data[i]);
 			console.log("Added character: " + data[i].name)
-  		}
-  	});
-}
+  		}, {
+			name: "Luxury Cruise Child",
+     	   	image: "leisure.png",
+     	}];
+    	for (var i = 0; i < data.length; i++) {
+    		Journies.insert(data[i]);
+			console.log("Added character: " + data[i].name)
+				}, {
+				name: "Percy the Cat",
+				image: "percy.png",
+				}];
+				for (var i = 0; i < data.length; i++) {
+				Journies.insert(data[i]);
+				console.log("Added character: " + data[i].name)
+				}, {
+				name: "Ghost of Sunbeam",
+				image: "ghost.png",
+				}];
+				for (var i = 0; i < data.length; i++) {
+				Journies.insert(data[i]);
+				console.log("Added character: " + data[i].name)
+					}, {
+						name: Chip the Ship Chef",
+				 	   	image: "chef.png",
+				 	}];
+					for (var i = 0; i < data.length; i++) {
+						Journies.insert(data[i]);
+						console.log("Added character: " + data[i].name)
+					}, {
+						name: "Tom Binnacle",
+				 	   	image: "tom.png",
+				 	}];
+					for (var i = 0; i < data.length; i++) {
+						Journies.insert(data[i]);
+						console.log("Added character: " + data[i].name)
+						     	}, {
+									name: "Textile Designer",
+						     	   	image: "textile.png",
+						     	}];
+						    	for (var i = 0; i < data.length; i++) {
+						    		Journies.insert(data[i]);
+									console.log("Added character: " + data[i].name)
+						  		}, {
+				  	});
+				}
