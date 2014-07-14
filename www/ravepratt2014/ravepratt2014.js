@@ -96,7 +96,7 @@ if (Meteor.isServer) {
 					text: ["Hello", "My name is Bill"]
 				}, {
 					background: "bg1.png",
-					text: ["Nice to meet you"]
+					text: ["Nice to meet you!"]
 				}, {
 					background: "bg2.png",
 					text: ["Do you want", "to join the", "Navy?"]
