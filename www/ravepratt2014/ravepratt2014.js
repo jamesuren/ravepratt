@@ -38,6 +38,27 @@ if (Meteor.isClient) {
 		return true;	
 	};
 	
+	
+	Template.storyPreviousButton.buttonPreviousEnabled = function (){
+		var story = Session.get("story")
+		if (story == 0) {
+			return "disabled";
+		}
+		return "enabled";
+	};
+	
+	Template.storyNextButton.buttonNextEnabled = function (){
+		var story = Session.get("story");
+		var journeyId = Session.get("journey");
+		var journey = Journies.findOne({_id: journeyId});
+		var quest = Session.get("quest");
+		var storyLength = journey.quests[quest].story.length;
+		if (story == (storyLength - 1)) {
+			return "disabled";
+		}
+		return "enabled";
+	};
+		
 	Template.story.background = function () {
 		var journeyId = Session.get("journey");
 		var journey = Journies.findOne({_id: journeyId});
@@ -51,11 +72,18 @@ if (Meteor.isClient) {
 		var journeyId = Session.get("journey");
 		var journey = Journies.findOne({_id: journeyId});
 		var quest = Session.get("quest");
+		console.log("quest", quest);
 		var page = Session.get("story");
 		var story = journey.quests[quest].story[page];
+		console.log("page", page)
+		console.log("story", story)
 		return story.text;
 	};
-
+	
+	Template.story.element = function () {
+		return this;
+	};
+	
 	Template.question.questionText = function () {
 		var journeyId = Session.get("journey");
 		var journey = Journies.findOne({_id: journeyId});
@@ -86,14 +114,20 @@ if (Meteor.isClient) {
 			var journeyId = Session.get("journey");
 			var journey = Journies.findOne({_id: journeyId});
 			var quest = Session.get("quest");
+			var reward = Session.get("reward");
+			var stars = Session.get("stars");
 			var correctAnswer = journey.quests[quest].correctAnswer;
-			if (this == correctAnswer) 
-			if (page < storyLength) {
-				Session.set("story", page);
+			if (this == correctAnswer) {
+				console.log("Clicked correct answer");
+				Session.set("quest", quest + 1);
+				Session.set("story", 0);
+				Session.set("stars", stars+reward);
+				Session.set("reward", 5);
 			}
 			else {
-				Session.set("story", -1);
+				Session.set("reward", reward-1);
 			}
+		
 			
 			// if this=the answer is correct then + 1 to quest, set story to zero and add reward to the stars
 			// if the answer is incorrect then - 1 from reward 
@@ -108,6 +142,23 @@ if (Meteor.isClient) {
 			var storyLength = journey.quests[quest].story.length;
 			var page = Session.get("story");
 			page = page + 1;
+			if (page < storyLength) {
+				Session.set("story", page);
+			}
+			else {
+				Session.set("story", -1);
+			}
+		}
+	});
+	
+	Template.storyPreviousButton.events( {
+		'click': function () {
+			var journeyId = Session.get("journey");
+			var journey = Journies.findOne({_id: journeyId});
+			var quest = Session.get("quest");
+			var storyLength = journey.quests[quest].story.length;
+			var page = Session.get("story");
+			page = page - 1;
 			if (page < storyLength) {
 				Session.set("story", page);
 			}
@@ -133,7 +184,8 @@ if (Meteor.isClient) {
 		        Session.set("journey", this._id);
 				Session.set("quest", 0);
 		        Session.set("story", 0);
-				Session.set("stars", 0);			
+				Session.set("stars", 0);
+				Session.set("reward", 5);			
 			}
 			console.log("Selected character " + this.name);	
       	}
@@ -172,64 +224,40 @@ if (Meteor.isServer) {
 				hint: "It begins with P",
 				story: [{
 					background: "bg0.png",
-					text: ["Hello", "My name is Bill"]
+					text: ["Hello", "My name is Bob"]
 				}, {
 					background: "bg1.png",
-					text: ["Nice to meet you"]
+					text: ["I enjoy sports!"]
 				}, {
 					background: "bg2.png",
-					text: ["Do you want", "to join the", "Navy?"]
+					text: ["Do you want", "to join the", "soccer team?"]
 				}]					
 			}]
      	}, {
 			name: "Strange Cartographer",
-     	   	image: "cartographer.png",
-     	}];
-    	for (var i = 0; i < data.length; i++) {
-    		Journies.insert(data[i]);
-			console.log("Added character: " + data[i].name)
-  		}, {
+     	   	image: "cartographer.png"
+     	}, {
 			name: "Luxury Cruise Child",
-     	   	image: "leisure.png",
+     	   	image: "leisure.png"
+		}, {
+			name: "Percy the Cat",
+			image: "percy.png"
+		}, {
+			name: "Ghost of Sunbeam",
+			image: "ghost.png"
+		}, {
+			name: "Chip the Ship Chef",
+	 	   	image: "chef.png"
+		}, {
+			name: "Tom Binnacle",
+	 	   	image: "tom.png"
+     	}, {
+			name: "Textile Designer",
+     	   	image: "textile.png"
      	}];
     	for (var i = 0; i < data.length; i++) {
     		Journies.insert(data[i]);
-			console.log("Added character: " + data[i].name)
-				}, {
-				name: "Percy the Cat",
-				image: "percy.png",
-				}];
-				for (var i = 0; i < data.length; i++) {
-				Journies.insert(data[i]);
-				console.log("Added character: " + data[i].name)
-				}, {
-				name: "Ghost of Sunbeam",
-				image: "ghost.png",
-				}];
-				for (var i = 0; i < data.length; i++) {
-				Journies.insert(data[i]);
-				console.log("Added character: " + data[i].name)
-					}, {
-						name: Chip the Ship Chef",
-				 	   	image: "chef.png",
-				 	}];
-					for (var i = 0; i < data.length; i++) {
-						Journies.insert(data[i]);
-						console.log("Added character: " + data[i].name)
-					}, {
-						name: "Tom Binnacle",
-				 	   	image: "tom.png",
-				 	}];
-					for (var i = 0; i < data.length; i++) {
-						Journies.insert(data[i]);
-						console.log("Added character: " + data[i].name)
-						     	}, {
-									name: "Textile Designer",
-						     	   	image: "textile.png",
-						     	}];
-						    	for (var i = 0; i < data.length; i++) {
-						    		Journies.insert(data[i]);
-									console.log("Added character: " + data[i].name)
-						  		}, {
-				  	});
-				}
+			console.log("Added character: " + data[i].name);
+		}
+	});
+}
