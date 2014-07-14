@@ -18,10 +18,11 @@
 
 <template name="journey">
 	<div class="journey">
+		{{> starsTotal}}
 		{{#if inStory}}
 			{{> story}}
 		{{else}}
-			{{> quest}}
+			{{> question}}
 		{{/if}}
 	</div>
 </template>
@@ -40,15 +41,21 @@
 	<div class="button">
 		<span>next</span>
 	</div>	
+</template>	
+
+<template name="starsTotal">
+	<div class="starsTotal">
+		<span><img src="star.png">{{stars}}/35</span>
+	</div>	
 </template>			
 
-<template name="quest">
-	<div class="quest">
-		<div class="question">
-			<span>{{question}}</span>
+<template name="question">
+	<div class="question">
+		<div class="questionText">
+			<span>{{questionText}}</span>
 			<img src="{{image}}">
 		</div>
-		<div>
+		<div class="answers">
 			{{#each answers}}
 				{{> answer}}
 			{{/each}}
