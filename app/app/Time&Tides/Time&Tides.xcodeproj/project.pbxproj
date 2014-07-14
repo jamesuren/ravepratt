@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7DF4B3E1973FC44005338F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF4B3D1973FC44005338F9 /* Foundation.framework */; };
+		C7DF4B401973FC44005338F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF4B3F1973FC44005338F9 /* CoreGraphics.framework */; };
+		C7DF4B421973FC44005338F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF4B411973FC44005338F9 /* UIKit.framework */; };
+		C7DF4B481973FC44005338F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7DF4B461973FC44005338F9 /* InfoPlist.strings */; };
+		C7DF4B4A1973FC44005338F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DF4B491973FC44005338F9 /* main.m */; };
+		C7DF4B4E1973FC44005338F9 /* raveprattAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DF4B4D1973FC44005338F9 /* raveprattAppDelegate.m */; };
+		C7DF4B511973FC44005338F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DF4B4F1973FC44005338F9 /* Main.storyboard */; };
+		C7DF4B541973FC44005338F9 /* raveprattViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DF4B531973FC44005338F9 /* raveprattViewController.m */; };
+		C7DF4B561973FC44005338F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DF4B551973FC44005338F9 /* Images.xcassets */; };
+		C7DF4B5D1973FC44005338F9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF4B5C1973FC44005338F9 /* XCTest.framework */; };
+		C7DF4B5E1973FC44005338F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF4B3D1973FC44005338F9 /* Foundation.framework */; };
+		C7DF4B5F1973FC44005338F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF4B411973FC44005338F9 /* UIKit.framework */; };
+		C7DF4B671973FC44005338F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7DF4B651973FC44005338F9 /* InfoPlist.strings */; };
+		C7DF4B691973FC44005338F9 /* Time_TidesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7DF4B681973FC44005338F9 /* Time_TidesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7DF4B601973FC44005338F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7DF4B321973FC44005338F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7DF4B391973FC44005338F9;
+			remoteInfo = "Time&Tides";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7DF4B3A1973FC44005338F9 /* Time&Tides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time&Tides.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DF4B3D1973FC44005338F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7DF4B3F1973FC44005338F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C7DF4B411973FC44005338F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C7DF4B451973FC44005338F9 /* Time&Tides-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Time&Tides-Info.plist"; sourceTree = "<group>"; };
+		C7DF4B471973FC44005338F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7DF4B491973FC44005338F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7DF4B4B1973FC44005338F9 /* Time&Tides-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Time&Tides-Prefix.pch"; sourceTree = "<group>"; };
+		C7DF4B4C1973FC44005338F9 /* raveprattAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raveprattAppDelegate.h; sourceTree = "<group>"; };
+		C7DF4B4D1973FC44005338F9 /* raveprattAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = raveprattAppDelegate.m; sourceTree = "<group>"; };
+		C7DF4B501973FC44005338F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7DF4B521973FC44005338F9 /* raveprattViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raveprattViewController.h; sourceTree = "<group>"; };
+		C7DF4B531973FC44005338F9 /* raveprattViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = raveprattViewController.m; sourceTree = "<group>"; };
+		C7DF4B551973FC44005338F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C7DF4B5B1973FC44005338F9 /* Time&TidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Time&TidesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7DF4B5C1973FC44005338F9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C7DF4B641973FC44005338F9 /* Time&TidesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Time&TidesTests-Info.plist"; sourceTree = "<group>"; };
+		C7DF4B661973FC44005338F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7DF4B681973FC44005338F9 /* Time_TidesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Time_TidesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7DF4B371973FC44005338F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DF4B401973FC44005338F9 /* CoreGraphics.framework in Frameworks */,
+				C7DF4B421973FC44005338F9 /* UIKit.framework in Frameworks */,
+				C7DF4B3E1973FC44005338F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DF4B581973FC44005338F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DF4B5D1973FC44005338F9 /* XCTest.framework in Frameworks */,
+				C7DF4B5F1973FC44005338F9 /* UIKit.framework in Frameworks */,
+				C7DF4B5E1973FC44005338F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7DF4B311973FC44005338F9 = {
+			isa = PBXGroup;
+			children = (
+				C7DF4B431973FC44005338F9 /* Time&Tides */,
+				C7DF4B621973FC44005338F9 /* Time&TidesTests */,
+				C7DF4B3C1973FC44005338F9 /* Frameworks */,
+				C7DF4B3B1973FC44005338F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7DF4B3B1973FC44005338F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7DF4B3A1973FC44005338F9 /* Time&Tides.app */,
+				C7DF4B5B1973FC44005338F9 /* Time&TidesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7DF4B3C1973FC44005338F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7DF4B3D1973FC44005338F9 /* Foundation.framework */,
+				C7DF4B3F1973FC44005338F9 /* CoreGraphics.framework */,
+				C7DF4B411973FC44005338F9 /* UIKit.framework */,
+				C7DF4B5C1973FC44005338F9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7DF4B431973FC44005338F9 /* Time&Tides */ = {
+			isa = PBXGroup;
+			children = (
+				C7DF4B4C1973FC44005338F9 /* raveprattAppDelegate.h */,
+				C7DF4B4D1973FC44005338F9 /* raveprattAppDelegate.m */,
+				C7DF4B4F1973FC44005338F9 /* Main.storyboard */,
+				C7DF4B521973FC44005338F9 /* raveprattViewController.h */,
+				C7DF4B531973FC44005338F9 /* raveprattViewController.m */,
+				C7DF4B551973FC44005338F9 /* Images.xcassets */,
+				C7DF4B441973FC44005338F9 /* Supporting Files */,
+			);
+			path = "Time&Tides";
+			sourceTree = "<group>";
+		};
+		C7DF4B441973FC44005338F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7DF4B451973FC44005338F9 /* Time&Tides-Info.plist */,
+				C7DF4B461973FC44005338F9 /* InfoPlist.strings */,
+				C7DF4B491973FC44005338F9 /* main.m */,
+				C7DF4B4B1973FC44005338F9 /* Time&Tides-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7DF4B621973FC44005338F9 /* Time&TidesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7DF4B681973FC44005338F9 /* Time_TidesTests.m */,
+				C7DF4B631973FC44005338F9 /* Supporting Files */,
+			);
+			path = "Time&TidesTests";
+			sourceTree = "<group>";
+		};
+		C7DF4B631973FC44005338F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7DF4B641973FC44005338F9 /* Time&TidesTests-Info.plist */,
+				C7DF4B651973FC44005338F9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7DF4B391973FC44005338F9 /* Time&Tides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DF4B6C1973FC44005338F9 /* Build configuration list for PBXNativeTarget "Time&Tides" */;
+			buildPhases = (
+				C7DF4B361973FC44005338F9 /* Sources */,
+				C7DF4B371973FC44005338F9 /* Frameworks */,
+				C7DF4B381973FC44005338F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time&Tides";
+			productName = "Time&Tides";
+			productReference = C7DF4B3A1973FC44005338F9 /* Time&Tides.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7DF4B5A1973FC44005338F9 /* Time&TidesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DF4B6F1973FC44005338F9 /* Build configuration list for PBXNativeTarget "Time&TidesTests" */;
+			buildPhases = (
+				C7DF4B571973FC44005338F9 /* Sources */,
+				C7DF4B581973FC44005338F9 /* Frameworks */,
+				C7DF4B591973FC44005338F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7DF4B611973FC44005338F9 /* PBXTargetDependency */,
+			);
+			name = "Time&TidesTests";
+			productName = "Time&TidesTests";
+			productReference = C7DF4B5B1973FC44005338F9 /* Time&TidesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7DF4B321973FC44005338F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ravepratt;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = RavePratt;
+				TargetAttributes = {
+					C7DF4B5A1973FC44005338F9 = {
+						TestTargetID = C7DF4B391973FC44005338F9;
+					};
+				};
+			};
+			buildConfigurationList = C7DF4B351973FC44005338F9 /* Build configuration list for PBXProject "Time&Tides" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7DF4B311973FC44005338F9;
+			productRefGroup = C7DF4B3B1973FC44005338F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7DF4B391973FC44005338F9 /* Time&Tides */,
+				C7DF4B5A1973FC44005338F9 /* Time&TidesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7DF4B381973FC44005338F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DF4B561973FC44005338F9 /* Images.xcassets in Resources */,
+				C7DF4B481973FC44005338F9 /* InfoPlist.strings in Resources */,
+				C7DF4B511973FC44005338F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DF4B591973FC44005338F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DF4B671973FC44005338F9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7DF4B361973FC44005338F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DF4B4E1973FC44005338F9 /* raveprattAppDelegate.m in Sources */,
+				C7DF4B4A1973FC44005338F9 /* main.m in Sources */,
+				C7DF4B541973FC44005338F9 /* raveprattViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7DF4B571973FC44005338F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7DF4B691973FC44005338F9 /* Time_TidesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7DF4B611973FC44005338F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7DF4B391973FC44005338F9 /* Time&Tides */;
+			targetProxy = C7DF4B601973FC44005338F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7DF4B461973FC44005338F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7DF4B471973FC44005338F9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7DF4B4F1973FC44005338F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7DF4B501973FC44005338F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7DF4B651973FC44005338F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7DF4B661973FC44005338F9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7DF4B6A1973FC44005338F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7DF4B6B1973FC44005338F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7DF4B6D1973FC44005338F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time&Tides/Time&Tides-Prefix.pch";
+				INFOPLIST_FILE = "Time&Tides/Time&Tides-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C7DF4B6E1973FC44005338F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time&Tides/Time&Tides-Prefix.pch";
+				INFOPLIST_FILE = "Time&Tides/Time&Tides-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C7DF4B701973FC44005338F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Time&Tides.app/Time&Tides";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time&Tides/Time&Tides-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Time&TidesTests/Time&TidesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C7DF4B711973FC44005338F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Time&Tides.app/Time&Tides";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Time&Tides/Time&Tides-Prefix.pch";
+				INFOPLIST_FILE = "Time&TidesTests/Time&TidesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7DF4B351973FC44005338F9 /* Build configuration list for PBXProject "Time&Tides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DF4B6A1973FC44005338F9 /* Debug */,
+				C7DF4B6B1973FC44005338F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DF4B6C1973FC44005338F9 /* Build configuration list for PBXNativeTarget "Time&Tides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DF4B6D1973FC44005338F9 /* Debug */,
+				C7DF4B6E1973FC44005338F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7DF4B6F1973FC44005338F9 /* Build configuration list for PBXNativeTarget "Time&TidesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7DF4B701973FC44005338F9 /* Debug */,
+				C7DF4B711973FC44005338F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7DF4B321973FC44005338F9 /* Project object */;
+}
