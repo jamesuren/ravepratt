@@ -110,15 +110,19 @@ if (Meteor.isClient) {
 	 * Character selection
 	 */	
 	Template.characters.characters = function () {
-		// Ignore the quests field for the character list
-    	return Journies.find({}, {fields: {quests: 0}});
+    	return Journies.find();
 	};
+	
     Template.character.events( {
       	'click': function () {
-	        Session.set("journey", this._id);
-			Session.set("quest", 0);
-	        Session.set("story", 0);
-			console.log("Selected character " + this.name);
+			if (this.quests)
+			{
+				// Only start journey for character with quests
+		        Session.set("journey", this._id);
+				Session.set("quest", 0);
+		        Session.set("story", 0);			
+			}
+			console.log("Selected character " + this.name);	
       	}
     });
 
@@ -162,6 +166,9 @@ if (Meteor.isServer) {
 					text: ["Do you want", "to join the", "Navy?"]
 				}]					
 			}]
+     	}, {
+			name: "Strange Cartographer",
+     	   	image: "cartographer.png",
      	}];
     	for (var i = 0; i < data.length; i++) {
     		Journies.insert(data[i]);
