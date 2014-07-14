@@ -28,11 +28,37 @@ if (Meteor.isClient) {
 
 	Template.journies.hasSelectedJourney = function ()	{
 		return Session.get("journey");
-	}
+	};
 
 	Template.journey.inStory = function () {
-		return Session.get("page");
-	}
+		var story = Session.get("story");
+		if (story == -1){
+			return false
+		}
+		return true;	
+	};
+	
+	Template.story.background = function () {
+		var journeyId = Session.get("journey");
+		var journey = Journies.findOne({_id: journeyId});
+		var quest = Session.get("quest");
+		var page = Session.get("story");
+		console.log(page);
+		var story = journey.quests[quest].story[page];
+		console.log("Loading story: " + story);
+		return story.background;
+	};
+	
+	Template.story.text = function () {
+		var journeyId = Session.get("journey");
+		var journey = Journies.findOne({_id: journeyId});
+		var quest = Session.get("quest");
+		var page = Session.get("story");
+		console.log(page);
+		var story = journey.quests[quest].story[page];
+		console.log("Loading story: " + story);
+		return story.text;
+	};
 
 	Template.quest.question = function () {
 		var journeyId = Session.get("journey");
@@ -62,6 +88,24 @@ if (Meteor.isClient) {
 		}
 	});
 	
+	Template.storyNextButton.events( {
+		'click': function () {
+			var journeyId = Session.get("journey");
+			var journey = Journies.findOne({_id: journeyId});
+			var quest = Session.get("quest");
+			var storyLength = journey.quests[quest].story.length;
+			var page = Session.get("story");
+			page = page + 1;
+			if (page < storyLength) {
+				Session.set("story", page);
+			}
+			else {
+				Session.set("story", -1);
+			}
+
+		}
+	});
+	
 	/*
 	 * Character selection
 	 */	
@@ -72,7 +116,8 @@ if (Meteor.isClient) {
     Template.character.events( {
       	'click': function () {
 	        Session.set("journey", this._id);
-	        Session.set("quest", 0);
+			Session.set("quest", 0);
+	        Session.set("story", 0);
 			console.log("Selected character " + this.name);
       	}
     });
