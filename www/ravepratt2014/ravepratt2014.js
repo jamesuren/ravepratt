@@ -72,11 +72,8 @@ if (Meteor.isClient) {
 		var journeyId = Session.get("journey");
 		var journey = Journies.findOne({_id: journeyId});
 		var quest = Session.get("quest");
-		console.log("quest", quest);
 		var page = Session.get("story");
 		var story = journey.quests[quest].story[page];
-		console.log("page", page)
-		console.log("story", story)
 		return story.text;
 	};
 	
@@ -108,6 +105,27 @@ if (Meteor.isClient) {
 		return Session.get("stars");
 	};
 	
+	Template.popUp.popUpEnabled = function (){
+		var dialog = Session.get("dialog");
+		if (dialog){
+			return "enabled";
+		}
+		return "disabled";
+
+	}
+	
+	Template.popUp.popUpText = function () {
+		return Session.get("popUpText");
+	}
+	
+	Template.popUp.popUpButtonText = function () {
+		return Session.get("popUpButtonText");
+	}
+	
+	Template.stars.stars = function () {
+		return [0,1,2]; //TODO hack
+	}
+	
 	Template.answer.events( {
 		'click': function () {
 			console.log("Clicked answer " + this);
@@ -116,18 +134,30 @@ if (Meteor.isClient) {
 			var quest = Session.get("quest");
 			var reward = Session.get("reward");
 			var stars = Session.get("stars");
+			var correctMessage = journey.quests[quest].correctMessage;
 			var correctAnswer = journey.quests[quest].correctAnswer;
+			Session.set("popUp", true);
 			if (this == correctAnswer) {
 				console.log("Clicked correct answer");
 				Session.set("quest", quest + 1);
 				Session.set("story", 0);
 				Session.set("stars", stars+reward);
 				Session.set("reward", 5);
+				Session.set("popUpText", correctMessage);
+				Session.set("popUpButtonText", "Continue");
 			}
 			else {
-				Session.set("reward", reward-1);
+				Session.set("reward", reward-1);				
+				if (reward > 1) {
+					Session.set("popUpText", "Try again!");
+					Session.set("popUpButtonText", "Try Again");
+				}
+				else {
+					Session.set("popUpText", "Totally wrong");
+					Session.set("popUpButtonText", "Continue");
+				}
 			}
-		
+	
 			
 			// if this=the answer is correct then + 1 to quest, set story to zero and add reward to the stars
 			// if the answer is incorrect then - 1 from reward 
@@ -169,6 +199,18 @@ if (Meteor.isClient) {
 		}
 	});
 	
+	Template.hint.events( {
+		'click': function () {
+			var journeyId = Session.get("journey");
+			var journey = Journies.findOne({_id: journeyId});
+			var quest = Session.get("quest");
+			var hint = journey.quests[quest].hint;
+			console.log ("Hint: " + hint);
+			return quest.hint;	
+
+		}
+	});
+	
 	/*
 	 * Character selection
 	 */	
@@ -185,7 +227,8 @@ if (Meteor.isClient) {
 				Session.set("quest", 0);
 		        Session.set("story", 0);
 				Session.set("stars", 0);
-				Session.set("reward", 5);			
+				Session.set("reward", 5);
+				Session.set("popUp", false);			
 			}
 			console.log("Selected character " + this.name);	
       	}
@@ -206,6 +249,7 @@ if (Meteor.isServer) {
 				answers: ["Sam", "John", "Henry", "Bill"],
 				correctAnswer: "Henry",
 				hint: "It is on your birth certificate...",
+				correctMessage: ["Right!", "Information about the plate"],
 				story: [{
 					background: "bg0.png",
 					text: ["Hello", "My name is Bill"]
@@ -222,6 +266,7 @@ if (Meteor.isServer) {
 				answers: ["Blue", "Red", "Yellow", "Purple"],
 				correctAnswer: "Purple",
 				hint: "It begins with P",
+				correctMessage: ["Right!", "Information about the bowl"],
 				story: [{
 					background: "bg0.png",
 					text: ["Hello", "My name is Bob"]

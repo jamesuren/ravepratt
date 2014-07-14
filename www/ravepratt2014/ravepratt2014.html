@@ -24,6 +24,7 @@
 		{{else}}
 			{{> question}}
 		{{/if}}
+		{{> popUp}}
 	</div>
 </template>
 
@@ -62,6 +63,7 @@
 			<span>{{questionText}}</span>
 			<img src="{{image}}">
 		</div>
+		{{> hint}}
 		<div class="answers">
 			{{#each answers}}
 				{{> answer}}
@@ -74,7 +76,36 @@
 	<div class="answer">
 		<span>{{answer}}</span>
 	</div>
-</template>
+</template>	
+
+<template name="hint">
+	<div class="hint">
+		<span>Hint</span>
+	</div>
+</template>	
+
+<template name="popUp">
+	<div class="popUp {{popUpEnabled}}">
+		<div class="popUpText">
+			<span>{{popUpText}}</span>
+		</div>
+		<div class="popUpStars">
+			{{>stars}}	
+		</div>
+		<div class="popUpButton">
+			<span>{{popUpButtonText}}</span>
+		</div>
+	</div>
+</template>		
+
+<template name="stars">
+	<div class="stars">
+		{{#each stars}}
+			<img src="star.png">
+		{{/each}}
+	</div>
+</template>		
+			
 
 <template name="characters">
 	<div class="characters">
