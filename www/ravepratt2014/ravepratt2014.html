@@ -1,0 +1,71 @@
+<head>
+  <title>Time and Tides</title>
+</head>
+
+<body>
+	<div id="container">
+		{{> journies}}
+	</div>
+</body>
+
+<template name="journies">
+	{{#if hasSelectedJourney}}
+		{{> journey}}
+	{{else}}
+		{{> characters}}
+	{{/if}}
+</template>
+
+<template name="journey">
+	<div class="journey">
+		{{#if inStory}}
+			{{> story}}
+		{{else}}
+			{{> quest}}
+		{{/if}}
+	</div>
+</template>
+
+<template name="story">
+	<div class="story">
+		<img src="{{background}}">
+		{{#each text}}
+			<span>{{text}}</span>
+		{{/each}}
+	</div>
+</template>
+
+<template name="quest">
+	<div class="quest">
+		<div class="question">
+			<span>{{question}}</span>
+			<img src="{{image}}">
+		</div>
+		<div>
+			{{#each answers}}
+				{{> answer}}
+			{{/each}}
+		</div>
+	</div>
+</template>
+
+<template name="answer">
+	<div class="answer">
+		<span>{{answer}}</span>
+	</div>
+</template>
+
+<template name="characters">
+	<div class="characters">
+		{{#each characters}}
+			{{> character}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="character">
+	<div class="character">
+		<img src="{{image}}">
+		<span>{{name}}</span>
+	</div>
+</template>
