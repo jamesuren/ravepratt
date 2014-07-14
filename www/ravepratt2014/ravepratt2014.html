@@ -31,14 +31,21 @@
 	<div class="story">
 		<img src="{{background}}">
 		{{#each text}}
-			<span>{{text}}</span>
+			<span>{{element}}</span>
 		{{/each}}
+		{{> storyPreviousButton}}
 		{{> storyNextButton}}
 	</div>
 </template>
 
+<template name="storyPreviousButton">
+	<div class="button {{buttonPreviousEnabled}}" >
+		<span>previous</span>
+	</div>	
+</template>	
+
 <template name="storyNextButton">
-	<div class="button">
+	<div class="button {{buttonNextEnabled}}">
 		<span>next</span>
 	</div>	
 </template>	
