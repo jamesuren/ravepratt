@@ -140,6 +140,7 @@ if (Meteor.isServer) {
 				image: "coin.png",
 				answers: ["Sam", "John", "Henry", "Bill"],
 				correctAnswer: "Henry",
+				hint: "It is on your birth certificate...",
 				story: [{
 					background: "bg0.png",
 					text: ["Hello", "My name is Bill"]
@@ -155,6 +156,7 @@ if (Meteor.isServer) {
 				image: "coin.png",
 				answers: ["Blue", "Red", "Yellow", "Purple"],
 				correctAnswer: "Purple",
+				hint: "It begins with P",
 				story: [{
 					background: "bg0.png",
 					text: ["Hello", "My name is Bill"]
