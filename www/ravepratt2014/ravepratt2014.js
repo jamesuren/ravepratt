@@ -180,6 +180,18 @@ if (Meteor.isClient) {
 	};
 	Template.story.element = function () {
 		return this;
+	};	
+	Template.story.elementClass = function () {
+		var story = getStory().text; 
+		if (story[0] == this) {
+			return "top";
+		}
+		if (story[1] == this) {
+			return "middle";
+		}
+		if (story[2] == this) {
+			return "bottom";
+		}
 	};
 	Template.question.questionText = function () {
 		return getQuest().question;
@@ -271,7 +283,7 @@ if (Meteor.isServer) {
 				correctMessage: ["Right!", "Information about the plate"],
 				story: [{
 					background: "bg0.png",
-					text: ["Hello", "My name is Bill"]
+					text: ["Hello", "My name is Bill", "Said Bill."]
 				}, {
 					background: "bg1.png",
 					text: ["Nice to meet you!"]
