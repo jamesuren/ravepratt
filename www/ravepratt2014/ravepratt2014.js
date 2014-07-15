@@ -198,6 +198,9 @@ if (Meteor.isClient) {
 	/*
 	 * Data hooks
 	 */
+	Template.question.image = function(){
+		return getQuest().image;
+	}
 	Template.story.background = function () {
 		return getStory().background;
 	};	
@@ -314,7 +317,7 @@ if (Meteor.isServer) {
 					text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters say… I can’t read them. "]
 				}],
      			question: "What is your name?",
-				image: "coin.png",
+				image: "stories_questions/question1.png",
 				answers: ["Sam", "John", "Henry", "Bill"],
 				correctAnswer: "Henry",
 				hint: "It is on your birth certificate...",
@@ -346,13 +349,18 @@ if (Meteor.isServer) {
 					text: ["I had just picked myself up when an almost grown girl came running up behind me.", "Hey there! Boy!  My mistress sent me to tell you that the boy got his clothes from the Maritime Society.", "The Maritime Society!  I felt a shiver run down my spine."]
 				}, {
 					background: "bg1.png",
+<<<<<<< HEAD
  					text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
+=======
+					text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
+>>>>>>> bb2a779f54723acf7ea7064a963246c738983ba5
 				}, {
 					background: "bg2.png",
 					text: ["The girl smiled... I think she might have been laughing at me.", "Well, such excellent prospects indeed!  But for some reason Lady Aurelia believes you may be better suited to the sea. She requests that you appear at her kitchen entrance first thing tomorrow.", "Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business."]
 				}, {
 					background: "bg2.png",
 					text: ["I was grinning like a fool!", "But I quickly put on the grownup voice I use with my customers, thanked the girl, and commended my thanks to her lady.", "She actually laughed out loud at me, but I don’t care!  Me!  A sailor!"]			
+<<<<<<< HEAD
 				}, {
 					background: "bg2.png",
 					text: ["When the first bells rang to start the day, I figured I could finally appear to the door.  Such a grand home!", "I knocked on the door.  My heart started pounding.  Suddenly, I noticed that my breeches had a hole at the knee and my shirt was no longer white, but a gloomy shade of grey...", "You must be our Maritime Society boy!"]
@@ -393,6 +401,9 @@ if (Meteor.isServer) {
 				hint: "You can do it.",
 				correctMessage: ["Good work!", "You found it!"]	
 				
+=======
+				}],
+>>>>>>> bb2a779f54723acf7ea7064a963246c738983ba5
 			}]
      	}, {
 			name: "Strange Cartographer",

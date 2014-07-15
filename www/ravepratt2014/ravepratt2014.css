@@ -93,16 +93,48 @@ body {
 /* buttons */
 
 
-.button{
+.button.disabled{
 	
-	display:inline-block;
-	top:-40px;
+   display:none;
+	
+}
+
+
+.previous.button{
+	left:10px;
+	font-size:150%;
+	font-family:Tahoma;
+	
+	top:-50px;
 	position:relative;
 	
-	display: block;
-	    height: 30px;
-	    width: 30px;
-	    line-height: 30px;
+	
+	    height: 35px;
+	    width: 35px;
+	    line-height: 35px;
+
+	    -moz-border-radius: 15px; /* or 50% */
+	    border-radius: 15px; /* or 50% */
+
+	    background-color: black;
+	    color: white;
+	    text-align: center;
+	
+  	
+}
+.next.button{
+	left:267px;
+	font-size:150%;
+	font-family:Tahoma;
+	
+
+	top:529px;
+	position:absolute;
+	
+	
+	    height: 35px;
+	    width: 35px;
+	    line-height: 35px;
 
 	    -moz-border-radius: 15px; /* or 50% */
 	    border-radius: 15px; /* or 50% */
@@ -112,24 +144,24 @@ body {
 	    text-align: center;
 }
 
-.button.disabled{
-	
-  
-   display:none;
-	
-}
-
-
-.previous.button{
-	
-  	
-}
-.next.button{
-	
-}
-
 /* PopUp */
-.popUp.disabled {
+.popUpContainer.disabled {
 	display:none;	
 }
 
+.popUpContainer{
+	height:568px;
+	width:320px;
+	left:0px;
+	top:0px;
+background-color: rgba(0, 0, 0, 0.2);
+	position:absolute;
+}
+
+.stars img{
+	width:25px;
+}
+
+.hint span{
+	color:black;
+}
