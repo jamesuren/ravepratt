@@ -294,7 +294,7 @@ if (Meteor.isServer) {
 				hint: "It is on your birth certificate...",
 				correctMessage: ["Right!", "Information about the plate"],
 				story: [{
-					background: "bg0.png",
+					background: "stories_questions/story1.png",
 					text: ["Hello", "My name is Bill", "Said Bill."]
 				}, {
 					background: "bg1.png",
