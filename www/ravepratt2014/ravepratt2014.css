@@ -147,7 +147,19 @@ body {
 }
 
 /* PopUp */
-.popUp.disabled {
+.popUpContainer.disabled {
 	display:none;	
 }
 
+.popUpContainer{
+	height:568px;
+	width:320px;
+	left:0px;
+	top:0px;
+background-color: rgba(0, 0, 0, 0.6);
+	position:absolute;
+}
+
+.stars img{
+	width:25px;
+}
