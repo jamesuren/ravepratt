@@ -106,7 +106,19 @@ if (Meteor.isClient) {
 				Session.set("story", page);
 			}
 			else {
-				Session.set("story", -1);
+				var question = getQuest().question;
+				if (question) {
+				  	Session.set("story", -1);
+				}
+				else {
+				    Session.set("journey", 0);
+					Session.set("quest", 0);
+				    Session.set("story", 0);
+					Session.set("stars", 0);
+					Session.set("reward", 5);
+					Session.set("popUp", false);
+					Session.set("answersSelected", []);
+				}
 			}
 		}
 	});	
