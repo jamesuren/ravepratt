@@ -315,11 +315,11 @@ if (Meteor.isServer) {
 					background: "stories_questions/story1.png",
 					text: ["Tom\'s the name!  Tom Binnacle.  Well... actually I ain\'t got a second name.", "But a proper business proprietor needs a proper name.", "I heard some sailors talking about a binnacle and I think it sounds like a fine name, don\'t you?"]
 				}, {
-					background: "bg1.png",
-					text: ["Nice to meet you!"]
+					background: "stories_questions/story2.png",
+					text: ["The parish ladies were generous last Christmas!", "Some boys bought oranges, but I set myself up with some rags and beeswax.", "That’s how I keep body and soul together – shining shoes. " ]
 				}, {
-					background: "bg2.png",
-					text: ["Do you want", "to join the", "Navy?"]
+					background: "stories_questions/story3.png",
+					text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters say… I can’t read them. "]
 				}]
 			}, {
      			question: "What is your favourite colour?",
