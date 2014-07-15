@@ -322,31 +322,37 @@ if (Meteor.isServer) {
 			}, {
 				story: [{
 					background: "bg0.png",
-					text: ["Hello", "My name is Bob"]
+					text: ["Maritime Society again?  I wonder what that is?", "Some gentlemen are talkative while I shine their shoes.  If it won’t be bothering them, maybe I can ask... ", "Guess I should head down to my spot and get to work... What\’s that?  I haven’t seen that in the shop window before!"]
 				}, {
 					background: "bg1.png",
-					text: ["I enjoy sports!"]
+					text: ["That boy is a sailor too! I wish that could be me! I wonder why he’s changing his clothes?", "Hmmm... the shop doesn’t look too busy... only a lady and her maid in the whole place.", "I\’ll ask the shopkeeper."]
 				}, {
 					background: "bg2.png",
-					text: ["Do you want", "to join the", "soccer team?"]
+					text: ["Pardon!  What\’s that about?  Is he a sailor?", "I\'m tired of you beggars robbing me! Buy something or get out!", "How do you like that?  I\’m not a beggar!  I am the proprietor of a fine shoe-polishing establishment!"]
+				}, {
+					background: "bg2.png",
+					text: ["Get out!", "But the sailor boy...", "And then be threw me out."]
+					
 				}],
      			question: "What is written on the bowl?",
 				image: "stories_questions/question2.png",
-				answers: ["Join the war!", "Red", "Yellow", "Purple"],
-				correctAnswer: "Purple",
-				hint: "It begins with P",
-				correctMessage: ["Right!", "Information about the bowl"]		
+				answers: ["Join the war!", "Maritime Association", "Boy Sailor Society", "Maritime Society"],
+				correctAnswer: "Maritime Society",
+				hint: "It begins with M",
+				correctMessage: ["Right!", "The message on the bowl reads, \'Maritime Society.\'"]		
 			}, {
 				story: [{
 					background: "bg0.png",
-					text: ["This is the end"]
+					text: ["I had just picked myself up when an almost grown girl came running up behind me.", "Hey there! Boy!  My mistress sent me to tell you that the boy got his clothes from the Maritime Society.", "The Maritime Society!  I felt a shiver run down my spine."]
 				}, {
 					background: "bg1.png",
-					text: ["My friend, the end"]
+> 					text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
 				}, {
 					background: "bg2.png",
-					text: ["My only friend, the end"]
-				}]			
+					text: ["The girl smiled... I think she might have been laughing at me.", "Well, such excellent prospects indeed!  But for some reason Lady Aurelia believes you may be better suited to the sea. She requests that you appear at her kitchen entrance first thing tomorrow.", "Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business."]
+				}, {
+					background: "bg2.png",
+					text: ["I was grinning like a fool!", "But I quickly put on the grownup voice I use with my customers, thanked the girl, and commended my thanks to her lady.", "She actually laughed out loud at me, but I don’t care!  Me!  A sailor!"]			
 			}]
      	}, {
 			name: "Strange Cartographer",
