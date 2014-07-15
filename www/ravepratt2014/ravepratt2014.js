@@ -164,11 +164,6 @@ if (Meteor.isClient) {
 		return "enabled";
 	};	
 	Template.storyNextButton.buttonNextEnabled = function () {
-		var page = Session.get("story");
-		var storyLength = getQuest().story.length;
-		if (page == (storyLength - 1)) {
-			return "disabled";
-		}
 		return "enabled";
 	};
 	
