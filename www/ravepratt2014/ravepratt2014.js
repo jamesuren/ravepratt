@@ -68,14 +68,13 @@ if (Meteor.isClient) {
 				Session.set("reward", 5);
 				Session.set("popUpText", correctMessage);
 				Session.set("popUpButtonText", "Continue");
-				answersSelected.clear();
-				Session.set("answersSelected", answersSelected);
+				Session.set("answersSelected", []);
 				Session.set("hint", false);
 			}
 			else {
 				// Wrong answer
 				Session.set("reward", reward-1);				
-				if (reward > 1) {
+				if (reward > 3) {
 					// Show try again pop-up
 					console.log("Clicked wrong answer. Try again.");
 					Session.set("popUpText", "Try again!");
@@ -88,8 +87,11 @@ if (Meteor.isClient) {
 					console.log("Clicked wrong answer. No more try-agains.");
 					Session.set("popUpText", "Totally wrong");
 					Session.set("popUpButtonText", "Continue");
-					answersSelected.clear();
-					Session.set("answersSelected", answersSelected);
+					Session.set("quest", quest + 1);
+					Session.set("story", 0);
+					Session.set("stars", stars+reward);
+					Session.set("reward", 5);
+					Session.set("answersSelected", []);
 					Session.set("hint", false);
 				}
 			}
@@ -252,7 +254,13 @@ if (Meteor.isClient) {
 		return Session.get("popUpButtonText");
 	};	
 	Template.stars.stars = function () {
-		return [0,1,2]; //TODO hack for now
+		// Hack to make stars reduce as you progress
+		var reward = Session.get("reward");
+		var array = [];
+		for (var i = 0; i < reward; i++) {
+			array.push(i);
+		}
+		return array;
 	};
 	Template.popUpButton.events( {
 		// Clicked on button in popup for hint or wrong answer
