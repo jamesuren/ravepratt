@@ -50,11 +50,11 @@
 <template name="storyNextButton">
 	<div class="button {{buttonNextEnabled}}">
 		<span>next</span>
-	</div>	
+	</div>
 </template>	
 
 <template name="starsTotal">
-	<div class="starsTotal">
+	<div class="starsTotal {{starsTotalEnabled}}">
 		<span><img src="star.png">{{stars}}/35</span>
 	</div>	
 </template>			
@@ -81,7 +81,7 @@
 </template>	
 
 <template name="hint">
-	<div class="hint">
+	<div class="hint {{hintEnabled}}">
 		<span>Hint</span>
 	</div>
 </template>	
