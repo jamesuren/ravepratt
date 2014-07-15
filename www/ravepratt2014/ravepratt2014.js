@@ -23,7 +23,8 @@ if (Meteor.isClient) {
 		        Session.set("story", 0);
 				Session.set("stars", 0);
 				Session.set("reward", 5);
-				Session.set("popUp", false);			
+				Session.set("popUp", false);
+				Session.set("answersSelected", []);			
 			}
 			console.log("Selected character " + this.name);	
       	}
@@ -55,6 +56,11 @@ if (Meteor.isClient) {
 			var stars = Session.get("stars");
 			var correctMessage = getQuest().correctMessage;
 			var correctAnswer = getQuest().correctAnswer;
+			var answersSelected = Session.get("answersSelected");
+			//TODO var test = [];
+			//test.push("Hello");
+			//test = answersSelected.map(function (x) { return x; });
+			//console.log(test);
 			Session.set("popUp", true);
 			if (this == correctAnswer) {
 				// Correct answer
@@ -65,6 +71,8 @@ if (Meteor.isClient) {
 				Session.set("reward", 5);
 				Session.set("popUpText", correctMessage);
 				Session.set("popUpButtonText", "Continue");
+				answersSelected.clear();
+				Session.set("answersSelected", answersSelected);
 			}
 			else {
 				// Wrong answer
@@ -73,11 +81,17 @@ if (Meteor.isClient) {
 					// Show try again pop-up
 					Session.set("popUpText", "Try again!");
 					Session.set("popUpButtonText", "Try Again");
+					console.log("before" + answersSelected);
+					answersSelected.push (this);
+					console.log("after" + answersSelected);
+					Session.set("answersSelected", answersSelected);
 				}
 				else {
 					// No more try-agains. Show continue pop-up
 					Session.set("popUpText", "Totally wrong");
 					Session.set("popUpButtonText", "Continue");
+					answersSelected.clear();
+					Session.set("answersSelected", answersSelected);
 				}
 			}
 		}
@@ -111,12 +125,16 @@ if (Meteor.isClient) {
 
 		}
 	});	
+	
 	Template.hint.events( {
 		// Clicked the hint button
 		'click': function () {
 			var hint = getQuest().hint;
 			console.log ("Hint: " + hint);
-			return hint;	
+			Session.set("popUpText", hint);
+			Session.set("popUpButtonText", "Back to question");
+			var reward =Session.get("reward");
+			Session.set("reward", reward-1);
 		}
 	});
 	
@@ -124,7 +142,7 @@ if (Meteor.isClient) {
 	 * Button states
 	 */
 	Template.storyPreviousButton.buttonPreviousEnabled = function (){
-		var page = Session.get("story")
+		var page = Session.get("story");
 		if (page == 0) {
 			return "disabled";
 		}
@@ -134,6 +152,18 @@ if (Meteor.isClient) {
 		var page = Session.get("story");
 		var storyLength = getQuest().story.length;
 		if (page == (storyLength - 1)) {
+			return "disabled";
+		}
+		return "enabled";
+	};
+	
+	/*
+	 * Answer states
+	 */ 
+	
+	Template.answer.answerEnabled = function (){
+		var answersSelected = Session.get("answersSelected");
+		if (contains(answersSelected, this)){
 			return "disabled";
 		}
 		return "enabled";
@@ -177,30 +207,47 @@ if (Meteor.isClient) {
 	Template.popUp.popUpText = function () {
 		return Session.get("popUpText");
 	};	
-	Template.popUp.popUpButtonText = function () {
+	Template.popUpButton.popUpButtonText = function () {
 		return Session.get("popUpButtonText");
 	};	
 	Template.stars.stars = function () {
 		return [0,1,2]; //TODO hack for now
 	};
+	Template.popUpButton.events( {
+		// Clicked on button in popup for hint or wrong answer
+		'click': function () {
+			Session.set("dialog", false);
+			console.log("popUp closed");	
+		}
+	});
 	
 	/*
 	 * Helpers
 	 */
-	function getJourney()
-	{
+	function getJourney(){
 		var journeyId = Session.get("journey");
 		return Journies.findOne({_id: journeyId});
 	}
-	function getQuest()
-	{
+	function getQuest(){
 		var quest = Session.get("quest");
 		return getJourney().quests[quest];
 	}
-	function getStory()
-	{
+	function getStory(){
 		var page = Session.get("story");
 		return getQuest().story[page];
+	}
+	function contains(a, obj) {
+	    //console.log ("list" + a);
+		//console.log ("object" + obj);
+		for (var i = 0; i < a.length; i++) {
+	        //console.log (a[i]);
+			
+			if (a[i] === obj) {
+				console.log ("FOUND");
+	            return true;
+	        }
+	    }
+	    return false;
 	}
 }
 
@@ -249,6 +296,17 @@ if (Meteor.isServer) {
 					background: "bg2.png",
 					text: ["Do you want", "to join the", "soccer team?"]
 				}]					
+			}, {
+				story: [{
+					background: "bg0.png",
+					text: ["This is the end"]
+				}, {
+					background: "bg1.png",
+					text: ["My friend, the end"]
+				}, {
+					background: "bg2.png",
+					text: ["My only friend, the end"]
+				}]			
 			}]
      	}, {
 			name: "Strange Cartographer",
