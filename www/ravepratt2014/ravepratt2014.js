@@ -65,7 +65,6 @@ if (Meteor.isClient) {
 				Session.set("quest", quest + 1);
 				Session.set("story", 0);
 				Session.set("stars", stars+reward);
-				Session.set("reward", 5);
 				Session.set("popUpText", correctMessage);
 				Session.set("popUpButtonText", "Continue");
 				Session.set("answersSelected", []);
@@ -90,7 +89,6 @@ if (Meteor.isClient) {
 					Session.set("quest", quest + 1);
 					Session.set("story", 0);
 					Session.set("stars", stars+reward);
-					Session.set("reward", 5);
 					Session.set("answersSelected", []);
 					Session.set("hint", false);
 				}
@@ -164,11 +162,6 @@ if (Meteor.isClient) {
 		return "enabled";
 	};	
 	Template.storyNextButton.buttonNextEnabled = function () {
-		var page = Session.get("story");
-		var storyLength = getQuest().story.length;
-		if (page == (storyLength - 1)) {
-			return "disabled";
-		}
 		return "enabled";
 	};
 	
@@ -265,8 +258,12 @@ if (Meteor.isClient) {
 	Template.popUpButton.events( {
 		// Clicked on button in popup for hint or wrong answer
 		'click': function () {
+			console.log("popUp closed");
+		    var hint = Session.get("hint");
+			if (!hint){
+				Session.set("reward", 5);
+			}	
 			Session.set("popUp", false);
-			console.log("popUp closed");	
 		}
 	});
 	
