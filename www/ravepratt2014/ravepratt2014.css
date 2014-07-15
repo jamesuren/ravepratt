@@ -68,10 +68,14 @@ body {
     position: absolute;
        left:240px;
 	   top:35px;
-	   background-color:#ffffff;
+	   background-color:#996aba;
 	   font-family:mainFont;
 	   height:30px;
 	   width: 70px;
+	   
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
 }
 
 
@@ -109,15 +113,15 @@ body {
 	position:relative;
 	
 	
-	    height: 35px;
-	    width: 35px;
-	    line-height: 35px;
-
-	    -moz-border-radius: 15px; /* or 50% */
-	    border-radius: 15px; /* or 50% */
-
-	    background-color: black;
-	    color: white;
+	    height: 30px;
+	    width: 30px;
+	    line-height: 30px;
+        
+		border-style:solid;
+		border-width:1px;
+		border-color:black;
+	    background-color: #996aba;
+	    color: black;
 	    text-align: center;
 	
   	
@@ -132,15 +136,16 @@ body {
 	position:absolute;
 	
 	
-	    height: 35px;
-	    width: 35px;
-	    line-height: 35px;
+	    height: 30px;
+	    width: 30px;
+	    line-height: 30px;
 
-	    -moz-border-radius: 15px; /* or 50% */
-	    border-radius: 15px; /* or 50% */
+		border-style:solid;
+		border-width:1px;
+		border-color:black;
 
-	    background-color: black;
-	    color: white;
+	    background-color: #996aba;
+	    color: black;
 	    text-align: center;
 }
 
