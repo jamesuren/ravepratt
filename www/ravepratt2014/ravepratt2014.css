@@ -95,7 +95,6 @@ body {
 
 .button.disabled{
 	
-  
    display:none;
 	
 }
@@ -106,7 +105,6 @@ body {
 	font-size:150%;
 	font-family:Tahoma;
 	
-	display:inline-block;
 	top:-50px;
 	position:relative;
 	
@@ -125,13 +123,13 @@ body {
   	
 }
 .next.button{
-	left:270px;
+	left:267px;
 	font-size:150%;
 	font-family:Tahoma;
 	
-	display:inline-block;
-	top:-50px;
-	position:relative;
+
+	top:529px;
+	position:absolute;
 	
 	
 	    height: 35px;
