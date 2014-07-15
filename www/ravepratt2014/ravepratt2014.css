@@ -72,10 +72,9 @@ body {
 	   font-family:mainFont;
 	   height:30px;
 	   width: 70px;
-	   
-	border-style:solid;
-	border-width:1px;
-	border-color:black;
+	   border-style:solid;
+	   border-width:1px;
+	   border-color:black;
 }
 
 
@@ -94,7 +93,7 @@ body {
 }
 
 
-/* buttons */
+/* Buttons */
 
 
 .button.disabled{
@@ -108,21 +107,17 @@ body {
 	left:10px;
 	font-size:150%;
 	font-family:Tahoma;
-	
 	top:-50px;
 	position:relative;
-	
-	
-	    height: 30px;
-	    width: 30px;
-	    line-height: 30px;
-        
-		border-style:solid;
-		border-width:1px;
-		border-color:black;
-	    background-color: #996aba;
-	    color: black;
-	    text-align: center;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	background-color: #996aba;
+	color: black;
+	text-align: center;
 	
   	
 }
@@ -130,23 +125,17 @@ body {
 	left:267px;
 	font-size:150%;
 	font-family:Tahoma;
-	
-
 	top:529px;
 	position:absolute;
-	
-	
-	    height: 30px;
-	    width: 30px;
-	    line-height: 30px;
-
-		border-style:solid;
-		border-width:1px;
-		border-color:black;
-
-	    background-color: #996aba;
-	    color: black;
-	    text-align: center;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	background-color: #996aba;
+	color: black;
+	text-align: center;
 }
 
 /* PopUp */
