@@ -75,7 +75,7 @@
 </template>
 
 <template name="answer">
-	<div class="answer">
+	<div class="answer {{answerEnabled}}">
 		<span>{{answer}}</span>
 	</div>
 </template>	
@@ -94,11 +94,15 @@
 		<div class="popUpStars">
 			{{>stars}}	
 		</div>
-		<div class="popUpButton">
-			<span>{{popUpButtonText}}</span>
-		</div>
+		{{>popUpButton}}
 	</div>
 </template>		
+
+<template name="popUpButton">
+	<div class="popUpButton">
+		<span>{{popUpButtonText}}</span>
+	</div>
+</template>	
 
 <template name="stars">
 	<div class="stars">
