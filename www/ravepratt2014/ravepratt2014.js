@@ -308,7 +308,7 @@ if (Meteor.isServer) {
 				correctMessage: ["Right!", "Information about the plate"],
 				story: [{
 					background: "stories_questions/story1.png",
-					text: ["Hello", "My name is Bill", "Said Bill."]
+					text: ["Tom\'s the name!  Tom Binnacle.  Well... actually I ain\'t got a second name.", "But a proper business proprietor needs a proper name.", "I heard some sailors talking about a binnacle and I think it sounds like a fine name, don\'t you?"]
 				}, {
 					background: "bg1.png",
 					text: ["Nice to meet you!"]
