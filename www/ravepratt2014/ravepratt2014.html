@@ -88,14 +88,16 @@
 </template>	
 
 <template name="popUp">
-	<div class="popUp {{popUpEnabled}}">
-		<div class="popUpText">
-			<span>{{popUpText}}</span>
+	<div class="popUpContainer {{popUpEnabled}}">
+		<div class="popUp">
+			<div class="popUpText">
+				<span>{{popUpText}}</span>
+			</div>
+			<div class="popUpStars">
+				{{>stars}}	
+			</div>
+			{{>popUpButton}}
 		</div>
-		<div class="popUpStars">
-			{{>stars}}	
-		</div>
-		{{>popUpButton}}
 	</div>
 </template>		
 
