@@ -1,1 +1,4 @@
-/* CSS declarations go here */
+/* Character selection */
+.character img {
+	width: 320px;
+}
