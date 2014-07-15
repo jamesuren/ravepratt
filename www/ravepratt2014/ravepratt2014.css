@@ -96,6 +96,20 @@ body {
 .button{
 	
 	display:inline-block;
+	top:-40px;
+	position:relative;
+	
+	display: block;
+	    height: 30px;
+	    width: 30px;
+	    line-height: 30px;
+
+	    -moz-border-radius: 15px; /* or 50% */
+	    border-radius: 15px; /* or 50% */
+
+	    background-color: black;
+	    color: white;
+	    text-align: center;
 }
 
 .button.disabled{
@@ -105,13 +119,12 @@ body {
 	
 }
 
-.button.enabled{
+
+.previous.button{
 	
-   background-color:#ffffff;
-   height:30px;
-   width: 70px;
-	
-	
+  	
+}
+.next.button{
 	
 }
 
