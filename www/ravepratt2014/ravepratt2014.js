@@ -349,18 +349,14 @@ if (Meteor.isServer) {
 					text: ["I had just picked myself up when an almost grown girl came running up behind me.", "Hey there! Boy!  My mistress sent me to tell you that the boy got his clothes from the Maritime Society.", "The Maritime Society!  I felt a shiver run down my spine."]
 				}, {
 					background: "bg1.png",
-<<<<<<< HEAD
  					text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
-=======
 					text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
->>>>>>> bb2a779f54723acf7ea7064a963246c738983ba5
 				}, {
 					background: "bg2.png",
 					text: ["The girl smiled... I think she might have been laughing at me.", "Well, such excellent prospects indeed!  But for some reason Lady Aurelia believes you may be better suited to the sea. She requests that you appear at her kitchen entrance first thing tomorrow.", "Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business."]
 				}, {
 					background: "bg2.png",
 					text: ["I was grinning like a fool!", "But I quickly put on the grownup voice I use with my customers, thanked the girl, and commended my thanks to her lady.", "She actually laughed out loud at me, but I don’t care!  Me!  A sailor!"]			
-<<<<<<< HEAD
 				}, {
 					background: "bg2.png",
 					text: ["When the first bells rang to start the day, I figured I could finally appear to the door.  Such a grand home!", "I knocked on the door.  My heart started pounding.  Suddenly, I noticed that my breeches had a hole at the knee and my shirt was no longer white, but a gloomy shade of grey...", "You must be our Maritime Society boy!"]
@@ -383,16 +379,13 @@ if (Meteor.isServer) {
  					text: ["I followed him into a room.  He sat down next to a finely-dressed gentleman whom he introduced as Sir James Davenport, a governor of the Maritime Society.","Tom. How old are you?", "I didn’t know what to say. To be honest, I don’t really know.  What if I give the wrong answer? What should I say?" ]
 				}, {
 					background: "bg2.png",
-					text: ["...13 years old, sir.", "Oh dear.  That didn’t sound very convincing.  Sir James raised an eyebrow and eyed me sternly over his spectacles.", "Hmph. You look of adequate height."]
+					text: [" ...13 years old, sir.", "Oh dear.  That didn’t sound very convincing.  Sir James raised an eyebrow and eyed me sternly over his spectacles.", "Hmph. You look of adequate height."]
 				}, {
 					background: "bg2.png",
-					text: ["", "", ""]			
+					text: ["Sir James went on to question me about my family connections.  As I have none, that topic was quickly exhausted.", "Then he asked about my character.  Mr. Smith must have asked around the neighbourhood because he seemed to know more about me than I did!", "But he was saying good things, so I dared not interrupt him."]			
 				}, {
 					background: "bg2.png",
-					text: ["", "", ""]
-				}, {
-					background: "bg2.png",
-					text: ["", "", ""]
+					text: ["After what seemed like an age, Sir James began to write something on a paper.  He folded it up and handed it to me.", "Appear at the ship name that I do not know training ship on Wednesday morning.  Give the man at the dock this paper.", "You are now a Maritime Society boy, Tom."]
 				}],
      			question: "Can you find the training ship?",
 				image: "stories_questions/question2.png",
@@ -400,10 +393,7 @@ if (Meteor.isServer) {
 				correctAnswer: "I don\'t know how we will answer this.",
 				hint: "You can do it.",
 				correctMessage: ["Good work!", "You found it!"]	
-				
-=======
 				}],
->>>>>>> bb2a779f54723acf7ea7064a963246c738983ba5
 			}]
      	}, {
 			name: "Strange Cartographer",
