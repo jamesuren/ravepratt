@@ -198,6 +198,9 @@ if (Meteor.isClient) {
 	/*
 	 * Data hooks
 	 */
+	Template.question.image = function(){
+		return getQuest().image;
+	}
 	Template.story.background = function () {
 		return getStory().background;
 	};	
@@ -314,7 +317,7 @@ if (Meteor.isServer) {
 					text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters say… I can’t read them. "]
 				}],
      			question: "What is your name?",
-				image: "coin.png",
+				image: "stories_questions/question1.png",
 				answers: ["Sam", "John", "Henry", "Bill"],
 				correctAnswer: "Henry",
 				hint: "It is on your birth certificate...",

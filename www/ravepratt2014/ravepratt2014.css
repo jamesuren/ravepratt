@@ -163,3 +163,7 @@ background-color: rgba(0, 0, 0, 0.6);
 .stars img{
 	width:25px;
 }
+
+.hint span{
+	color:black;
+}
