@@ -93,25 +93,6 @@ body {
 /* buttons */
 
 
-.button{
-	
-	display:inline-block;
-	top:-40px;
-	position:relative;
-	
-	display: block;
-	    height: 30px;
-	    width: 30px;
-	    line-height: 30px;
-
-	    -moz-border-radius: 15px; /* or 50% */
-	    border-radius: 15px; /* or 50% */
-
-	    background-color: black;
-	    color: white;
-	    text-align: center;
-}
-
 .button.disabled{
 	
   
@@ -121,11 +102,48 @@ body {
 
 
 .previous.button{
+	left:10px;
+	font-size:150%;
+	font-family:Tahoma;
+	
+	display:inline-block;
+	top:-50px;
+	position:relative;
+	
+	
+	    height: 35px;
+	    width: 35px;
+	    line-height: 35px;
+
+	    -moz-border-radius: 15px; /* or 50% */
+	    border-radius: 15px; /* or 50% */
+
+	    background-color: black;
+	    color: white;
+	    text-align: center;
 	
   	
 }
 .next.button{
+	left:270px;
+	font-size:150%;
+	font-family:Tahoma;
 	
+	display:inline-block;
+	top:-50px;
+	position:relative;
+	
+	
+	    height: 35px;
+	    width: 35px;
+	    line-height: 35px;
+
+	    -moz-border-radius: 15px; /* or 50% */
+	    border-radius: 15px; /* or 50% */
+
+	    background-color: black;
+	    color: white;
+	    text-align: center;
 }
 
 /* PopUp */
