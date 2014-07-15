@@ -350,7 +350,6 @@ if (Meteor.isServer) {
 				}, {
 					background: "bg1.png",
  					text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
-					text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
 				}, {
 					background: "bg2.png",
 					text: ["The girl smiled... I think she might have been laughing at me.", "Well, such excellent prospects indeed!  But for some reason Lady Aurelia believes you may be better suited to the sea. She requests that you appear at her kitchen entrance first thing tomorrow.", "Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business."]
@@ -392,8 +391,7 @@ if (Meteor.isServer) {
 				answers: ["I don\'t know how we will answer this.", "Will we put other ships here?,", "Hm. I wonder", "Use your imagination for now."],
 				correctAnswer: "I don\'t know how we will answer this.",
 				hint: "You can do it.",
-				correctMessage: ["Good work!", "You found it!"]	
-				}],
+				correctMessage: ["Good work!", "You found it!"]
 			}]
      	}, {
 			name: "Strange Cartographer",
