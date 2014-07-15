@@ -35,10 +35,17 @@ body {
 	
 }
 
+.top {
+	
+	position:absolute;
+	left:60px;
+	top:60px;
+}
+
 .starsTotal {
     position: absolute;
        left:240px;
-	   margin-top:35px;
+	   top:35px;
 	   background-color:#ffffff;
 	   font-family:mainFont;
 	   height:30px;
