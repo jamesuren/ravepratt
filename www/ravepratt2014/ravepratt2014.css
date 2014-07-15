@@ -1,4 +1,18 @@
-/* Character selection */
-.character img {
+/* Main frame */
+body {
+	margin: 0px;
+}
+#container {
 	width: 320px;
+	height: 540px;
+}
+
+/* Character selection */
+.characters {
+	margin: 10px;
+	margin-top: 24px;
+}
+.character img {
+	width: 300px;
+	margin-top: 8px;
 }
