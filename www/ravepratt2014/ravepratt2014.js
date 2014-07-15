@@ -325,9 +325,9 @@ if (Meteor.isServer) {
 					text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters say… I can’t read them. "]
 				}]
 			}, {
-     			question: "What is your favourite colour?",
-				image: "coin.png",
-				answers: ["Blue", "Red", "Yellow", "Purple"],
+     			question: "Find the coin.  What does it say?",
+				image: "stories_questions/question1.png",
+				answers: ["Maritime Society Boy", "Red", "Yellow", "Purple"],
 				correctAnswer: "Purple",
 				hint: "It begins with P",
 				correctMessage: ["Right!", "Information about the bowl"],
