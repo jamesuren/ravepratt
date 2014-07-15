@@ -32,7 +32,9 @@
 	<div class="story">
 		<img src="{{background}}">
 		{{#each text}}
-			<span>{{element}}</span>
+			<div class="{{elementClass}}">
+				<span>{{element}}</span>
+			</div>
 		{{/each}}
 		{{> storyPreviousButton}}
 		{{> storyNextButton}}

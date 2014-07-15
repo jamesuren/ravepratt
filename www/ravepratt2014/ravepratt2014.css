@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: mainFont;
-    src: url(essays1743/essays1743.woff);
+    src: url(essays1743/Essays1743.woff);
 }
 
 
@@ -27,6 +27,13 @@ body {
 
 /* Story */
 
+.story{
+	
+	
+	margin-top:2px;
+    font-family:mainFont;
+	
+}
 
 .starsTotal {
     position: absolute;
@@ -49,7 +56,27 @@ body {
 	
 }
 
+/* buttons */
+
+
+.button{
+	
+	display:inline-block;
+}
+
 .button.disabled{
+	
+   background-color:#ffffff;
+   height:30px;
+   width: 70px;	
+	
+}
+
+.button.enabled{
+	
+   background-color:#ffffff;
+   height:30px;
+   width: 70px;
 	
 	
 	
