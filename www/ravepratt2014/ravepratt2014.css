@@ -1,4 +1,11 @@
 /* Main frame */
+
+@font-face {
+    font-family: mainFont;
+    src: url(essays1743/Essays1743.woff);
+}
+
+
 body {
 	margin: 0px;
 }
@@ -16,3 +23,67 @@ body {
 	width: 300px;
 	margin-top: 8px;
 }
+
+
+/* Story */
+
+.story{
+	
+	
+	margin-top:2px;
+    font-family:mainFont;
+	
+}
+
+.starsTotal {
+    position: absolute;
+       left:240px;
+	   margin-top:35px;
+	   background-color:#ffffff;
+	   font-family:mainFont;
+	   height:30px;
+	   width: 70px;
+}
+
+.story img {
+	
+	margin-top:30px;
+}
+
+.starsTotal img{
+	
+	width:25px;
+	
+}
+
+/* buttons */
+
+
+.button{
+	
+	display:inline-block;
+}
+
+.button.disabled{
+	
+   background-color:#ffffff;
+   height:30px;
+   width: 70px;	
+	
+}
+
+.button.enabled{
+	
+   background-color:#ffffff;
+   height:30px;
+   width: 70px;
+	
+	
+	
+}
+
+/* PopUp */
+.popUp.disabled {
+	display:none;	
+}
+
