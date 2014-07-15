@@ -38,10 +38,30 @@ body {
 .top {
 	
 	position:absolute;
-	left:60px;
-	top:60px;
+	left:63px;
+	top:70px;
+	width:230px;
+	line-height: 17px;
 }
 
+
+.middle {
+	
+	position:absolute;
+	left:15px;
+	top:270px;
+	width:240px;
+	line-height: 17px;
+}
+
+.bottom {
+	
+	position:absolute;
+	left:15px;
+	top:480px;
+	width:290px;
+	line-height: 17px;
+}
 .starsTotal {
     position: absolute;
        left:240px;
@@ -63,6 +83,14 @@ body {
 	
 }
 
+
+.starsTotal.disabled {
+	
+	display:none;
+	
+}
+
+
 /* buttons */
 
 
@@ -73,9 +101,8 @@ body {
 
 .button.disabled{
 	
-   background-color:#ffffff;
-   height:30px;
-   width: 70px;	
+  
+   display:none;
 	
 }
 
