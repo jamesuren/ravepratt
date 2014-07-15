@@ -24,7 +24,8 @@ if (Meteor.isClient) {
 				Session.set("stars", 0);
 				Session.set("reward", 5);
 				Session.set("popUp", false);
-				Session.set("answersSelected", []);			
+				Session.set("answersSelected", []);
+				Session.set("hint", false);			
 			}
 			console.log("Selected character " + this.name);	
       	}
@@ -57,10 +58,6 @@ if (Meteor.isClient) {
 			var correctMessage = getQuest().correctMessage;
 			var correctAnswer = getQuest().correctAnswer;
 			var answersSelected = Session.get("answersSelected");
-			//TODO var test = [];
-			//test.push("Hello");
-			//test = answersSelected.map(function (x) { return x; });
-			//console.log(test);
 			Session.set("popUp", true);
 			if (this == correctAnswer) {
 				// Correct answer
@@ -73,25 +70,27 @@ if (Meteor.isClient) {
 				Session.set("popUpButtonText", "Continue");
 				answersSelected.clear();
 				Session.set("answersSelected", answersSelected);
+				Session.set("hint", false);
 			}
 			else {
 				// Wrong answer
 				Session.set("reward", reward-1);				
 				if (reward > 1) {
 					// Show try again pop-up
+					console.log("Clicked wrong answer. Try again.");
 					Session.set("popUpText", "Try again!");
 					Session.set("popUpButtonText", "Try Again");
-					console.log("before" + answersSelected);
-					answersSelected.push (this);
-					console.log("after" + answersSelected);
+					answersSelected.push (this.toString());
 					Session.set("answersSelected", answersSelected);
 				}
 				else {
 					// No more try-agains. Show continue pop-up
+					console.log("Clicked wrong answer. No more try-agains.");
 					Session.set("popUpText", "Totally wrong");
 					Session.set("popUpButtonText", "Continue");
 					answersSelected.clear();
 					Session.set("answersSelected", answersSelected);
+					Session.set("hint", false);
 				}
 			}
 		}
@@ -143,10 +142,12 @@ if (Meteor.isClient) {
 		'click': function () {
 			var hint = getQuest().hint;
 			console.log ("Hint: " + hint);
+			Session.set("popUp", true);
 			Session.set("popUpText", hint);
 			Session.set("popUpButtonText", "Back to question");
 			var reward =Session.get("reward");
 			Session.set("reward", reward-1);
+			Session.set("hint", true);
 		}
 	});
 	
@@ -170,9 +171,8 @@ if (Meteor.isClient) {
 	};
 	
 	/*
-	 * Answer states
-	 */ 
-	
+	 * Enable states
+	 */	
 	Template.answer.answerEnabled = function (){
 		var answersSelected = Session.get("answersSelected");
 		if (contains(answersSelected, this)){
@@ -180,6 +180,23 @@ if (Meteor.isClient) {
 		}
 		return "enabled";
 	};
+	
+	Template.hint.hintEnabled = function (){
+		var hint = Session.get("hint");
+		if (hint){
+			return "disabled";
+		}
+		return "enabled";
+	};
+	
+	Template.starsTotal.starsTotalEnabled = function (){
+		var page = Session.get("story");
+		if (page == -1){
+			return "enabled";
+		}
+		return "disabled";
+		
+	};	
 	
 	/*
 	 * Data hooks
@@ -222,8 +239,8 @@ if (Meteor.isClient) {
 	 * Pop Up Dialog Box
 	 */
 	Template.popUp.popUpEnabled = function (){
-		var dialog = Session.get("dialog");
-		if (dialog){
+		var popUp = Session.get("popUp");
+		if (popUp){
 			return "enabled";
 		}
 		return "disabled";
@@ -240,10 +257,11 @@ if (Meteor.isClient) {
 	Template.popUpButton.events( {
 		// Clicked on button in popup for hint or wrong answer
 		'click': function () {
-			Session.set("dialog", false);
+			Session.set("popUp", false);
 			console.log("popUp closed");	
 		}
 	});
+	
 	
 	/*
 	 * Helpers
@@ -261,13 +279,8 @@ if (Meteor.isClient) {
 		return getQuest().story[page];
 	}
 	function contains(a, obj) {
-	    //console.log ("list" + a);
-		//console.log ("object" + obj);
 		for (var i = 0; i < a.length; i++) {
-	        //console.log (a[i]);
-			
-			if (a[i] === obj) {
-				console.log ("FOUND");
+			if (a[i] === obj.toString()) {
 	            return true;
 	        }
 	    }
