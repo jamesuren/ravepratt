@@ -82,7 +82,9 @@
 				{{> answer}}
 			{{/each}}
 		</div>
-		{{> stars}}
+		<div class="questionStars">
+			<span>Possible stars: {{> stars}}</span>	
+		</div>	
 	</div>
 </template>
 
@@ -100,7 +102,7 @@
 
 <template name="hint">
 	<div class="hint button {{hintEnabled}}">
-		<span>Hint</span>
+		<span>Get Hint</span>
 	</div>
 </template>
 

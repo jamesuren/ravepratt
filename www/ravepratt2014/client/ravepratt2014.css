@@ -92,6 +92,15 @@ body {
 }
 
 /* Question */
+.questionText{
+	position: absolute;
+	top: 290px;
+	line-height: 20px;
+	height: 80px;
+	left: 16px;
+	width: 288px;
+}
+
 .starsTotal {
     position: absolute;
 	left:240px;
@@ -111,17 +120,22 @@ body {
 	display:none;	
 }
 .question span{
-    position: absolute;
-	left:15px;
-	top:289px;
 	font-family:mainFont;
+}
+.hint{
+	position: absolute;
+	left: 201px;
+	top: 509px;
+	width: 100px;
+	height: 40px;
+	background-color: #996aba;
+	border: 1px solid;
 }
 .hint span {
 	color:black;
-	position: absolute;
-	left:15px;
-	top:300px;
-	width:280px;
+	position:relative;
+	left: 20px;
+	top: 5px;
 }
 .answers {
 	position: absolute;
@@ -135,9 +149,9 @@ body {
 	top: 0px;
 	position:relative;
 }
-.stars{
+.questionStars span{
 	position: absolute;
-	top: 528px;
+	top: 498px;
 	left: 15px;
 }
 

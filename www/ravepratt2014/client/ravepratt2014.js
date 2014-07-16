@@ -60,7 +60,6 @@ Template.answer.events( {
 			Session.set("quest", quest + 1);
 			Session.set("story", 0);
 			Session.set("stars", stars+reward);
-			Session.set("reward", 5);
 			Session.set("popUpText", correctMessage);
 			Session.set("popUpButtonText", "Continue");
 			Session.set("answersSelected", []);
@@ -85,7 +84,6 @@ Template.answer.events( {
 				Session.set("quest", quest + 1);
 				Session.set("story", 0);
 				Session.set("stars", stars+reward);
-				Session.set("reward", 5);
 				Session.set("answersSelected", []);
 				Session.set("hint", false);
 			}
@@ -253,7 +251,11 @@ Template.popUpButton.events( {
 	// Clicked on button in popup for hint or wrong answer
 	'click': function () {
 		Session.set("popUp", false);
-		console.log("popUp closed");	
+		console.log("popUp closed");
+		var page = Session.get("story");
+		if (page != -1){
+			Session.set("reward", 5);
+		}	
 	}
 });
 
