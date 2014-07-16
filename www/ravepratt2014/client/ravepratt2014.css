@@ -163,15 +163,17 @@ body {
 	width:280px;
 	top:15px;
 	color:black;
+	font-family:mainFont;
 	position:absolute;
 }
 .popUpButton {
 	height:20px;
 	width:150px;
 	top:75px;
+	font-family:mainFont;
 	color:black;
 	background-color:#996aba;
-	position:absolute;
+	position:fixed;
 	border: 1px solid;
 }
 .popUpStars{
