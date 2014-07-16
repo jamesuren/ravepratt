@@ -28,6 +28,22 @@
 	</div>
 </template>
 
+<!-- Character selection -->
+<template name="characters">
+	<div class="characters">
+		{{#each characters}}
+			{{> character}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="character">
+	<div class="character">
+		<img src="{{image}}">
+	</div>
+</template>
+
+<!-- Story -->
 <template name="story">
 	<div class="story">
 		<img src="{{background}}">
@@ -51,19 +67,14 @@
 	<div class="next button {{buttonNextEnabled}}">
 		<span>&gt;</span>
 	</div>
-</template>	
+</template>		
 
-<template name="starsTotal">
-	<div class="starsTotal {{starsTotalEnabled}}">
-		<span><img src="star.png">{{stars}}/35</span>
-	</div>	
-</template>			
-
+<!-- Question -->
 <template name="question">
 	<div class="question">
+		<img src="{{image}}">
 		<div class="questionText">
 			<span>{{questionText}}</span>
-			<img src="{{image}}">
 		</div>
 		{{> hint}}
 		<div class="answers">
@@ -73,6 +84,12 @@
 		</div>
 		{{> stars}}
 	</div>
+</template>
+
+<template name="starsTotal">
+	<div class="starsTotal {{starsTotalEnabled}}">
+		<span><img src="star.png">{{stars}}/35</span>
+	</div>	
 </template>
 
 <template name="answer">
@@ -85,8 +102,17 @@
 	<div class="hint button {{hintEnabled}}">
 		<span>Hint</span>
 	</div>
+</template>
+
+<template name="stars">
+	<div class="stars">
+		{{#each stars}}
+			<img src="star.png">
+		{{/each}}
+	</div>
 </template>	
 
+<!-- Pop-up dialog box -->
 <template name="popUp">
 	<div class="popUpContainer {{popUpEnabled}}">
 		<div class="popUp">
@@ -105,27 +131,4 @@
 	<div class="popUpButton">
 		<span>{{popUpButtonText}}</span>
 	</div>
-</template>	
-
-<template name="stars">
-	<div class="stars">
-		{{#each stars}}
-			<img src="star.png">
-		{{/each}}
-	</div>
 </template>		
-			
-
-<template name="characters">
-	<div class="characters">
-		{{#each characters}}
-			{{> character}}
-		{{/each}}
-	</div>
-</template>
-
-<template name="character">
-	<div class="character">
-		<img src="{{image}}">
-	</div>
-</template>
