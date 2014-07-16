@@ -24,10 +24,10 @@ Meteor.startup(function () {
 			}],
  			question: "What do the words around the sailor boy say?",
 			image: "stories_questions/question1.png",
-			answers: ["Maniner Boy's School", "Association of Boy Sailors", "Boys of the Ocean", "Maritime Society Boy"],
+			answers: ["Mariner Boy's School", "Association of Boy Sailors", "Boys of the Ocean", "A Maritime Society Boy"],
 			correctAnswer: "Maritime Society Boy",
 			hint: "The words form a circle around the boy on the coin.",
-			correctMessage: ["Right!", "The words read, \'Maritime Society Boy.\'"]
+			correctMessage: ["Right!", "The words read, \'A Maritime Society Boy.\'"]
 		}, {
 			story: [{
 				background: "stories_questions/story4.png",
@@ -110,7 +110,7 @@ Meteor.startup(function () {
 				text: ["Yes, sir!  If you think it is possible, sir!", "Of course it is possible!  Indeed, if you mean to go anywhere in this Navy, you will need to learn.", "Schoolmaster Banbridge thinks I am making fine progress, but I despair of ever having so elegant a hand as an officer should have. But I am doing well with stringing the letters together in my head to make words!"]
 			}, {
 				background: "bg2.png",
-				text: ["I wonder if the weather will be fine enough to work topside this week.  Tom!  Run down to the log book and tell me what the weather was like this time last year.", "I am surprised that he doesn’t want me to bring the book to him.  He actually wants me to read it and report back.", "I don\’t know if I’m that good at it yet..."]			
+				text: ["I wonder if the weather will be fine next week.  Tom!  Run down to the log book and tell me what the weather was like this time last year.", "I am surprised that he doesn’t want me to bring the book to him.  He actually wants me to read it and report back.", "I don\’t know if I’m that good at it yet..."]			
 			}],
  			question: "What was the weather like on a date which we will determine after we visit the museum?",
 			image: "stories_questions/question5.png",
