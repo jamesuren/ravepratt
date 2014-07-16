@@ -127,6 +127,34 @@ body {
 	top:0px;
 	background-color: rgba(0, 0, 0, 0.6);
 	position:absolute;
+	text-align: center;
+	vertical-align: middle;
+}
+.popUpText {
+	height:568px;
+	width:320px;
+	top:300px;
+	color:#C0C0C0;
+	position:absolute;
+	text-align: center;
+	vertical-align: middle;
+}
+.popUpButton {
+	height:568px;
+	width:320px;
+	top:400px;
+	color:#C0C0C0;
+	position:absolute;
+	text-align: center;
+	vertical-align: middle;
+}
+.popUpStars{
+	height:568px;
+	width:320px;
+	top:350px;
+	position:absolute;
+	text-align: center;
+	vertical-align: middle;
 }
 .stars img {
 	width:25px;
