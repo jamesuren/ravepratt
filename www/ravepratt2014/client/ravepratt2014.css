@@ -115,7 +115,7 @@ body {
 .hint span {
 	color:black;
 	position: absolute;
-	left:15px;
+	left:60px;
 	top:456px;
 	width:280px;
 }
@@ -124,6 +124,13 @@ body {
     position: absolute;
 	left:15px;
 	top:350px;
+	font-family:mainFont;
+}
+
+.answers span{
+	position: absolute;
+	left: 15px;
+	top: 500px;
 	font-family:mainFont;
 }
 
