@@ -1,11 +1,14 @@
-/* Main frame */
-
+/* Install fonts */
 @font-face {
     font-family: mainFont;
     src: url(essays1743/Essays1743.woff);
 }
 
-
+/* Main frame */
+html { 
+	/* Disable scrolling */
+	overflow: hidden;
+}
 body {
 	margin: 0px;
 	position: relative;
@@ -19,91 +22,45 @@ body {
 /* Character selection */
 .characters {
 	margin: 10px;
-	margin-top: 24px;
+	margin-top: 42px;
 }
 .character img {
 	width: 300px;
 	margin-top: 8px;
 }
 
-
-/* Story */
-
-.story{
-	
-	
-	margin-top:2px;
-    font-family:mainFont;
-	
+/* Buttons */
+.button.disabled {
+   display:none;	
 }
 
+/* Story */
+.story {	
+	margin-top:2px;
+    font-family:mainFont;
+}
 .top {
-	
 	position:absolute;
 	left:63px;
 	top:40px;
 	width:230px;
 	line-height: 17px;
 }
-
-
-.middle {
-	
+.middle {	
 	position:absolute;
 	left:15px;
 	top:247px;
 	width:240px;
 	line-height: 17px;
 }
-
 .bottom {
-	
 	position:absolute;
 	left:15px;
 	top:456px;
 	width:280px;
 	line-height: 17px;
 }
-.starsTotal {
-    position: absolute;
-       left:240px;
-	   top:35px;
-	   background-color:#996aba;
-	   font-family:mainFont;
-	   height:30px;
-	   width: 70px;
-	   border-style:solid;
-	   border-width:1px;
-	   border-color:black;
-}
-
-
-
-.starsTotal img{
-	
-	width:25px;
-	
-}
-
-
-.starsTotal.disabled {
-	
-	display:none;
-	
-}
-
-
-/* Buttons */
-
-
-.button.disabled{
-	
-   display:none;
-	
-}
-
-
-.previous.button{
+.previous.button {
 	left:10px;
 	font-size:150%;
 	font-family:Tahoma;
@@ -117,9 +74,7 @@ body {
 	border-color:black;
 	background-color: #996aba;
 	color: black;
-	text-align: center;
-	
-  	
+	text-align: center;  	
 }
 .next.button{
 	left:267px;
@@ -138,24 +93,41 @@ body {
 	text-align: center;
 }
 
+/* Question */
+.starsTotal {
+    position: absolute;
+	left:240px;
+	top:35px;
+	background-color:#996aba;
+	font-family:mainFont;
+	height:30px;
+	width: 70px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+.starsTotal img {
+	width:25px;	
+}
+.starsTotal.disabled {
+	display:none;	
+}
+.hint span {
+	color:black;
+}
+
 /* PopUp */
 .popUpContainer.disabled {
 	display:none;	
 }
-
-.popUpContainer{
+.popUpContainer {
 	height:568px;
 	width:320px;
 	left:0px;
 	top:0px;
-background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 	position:absolute;
 }
-
-.stars img{
+.stars img {
 	width:25px;
-}
-
-.hint span{
-	color:black;
 }
