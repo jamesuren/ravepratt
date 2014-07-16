@@ -20,7 +20,7 @@ Meteor.startup(function () {
 				text: ["The parish ladies were generous last Christmas!", "Some boys bought oranges, but I set myself up with some rags and beeswax.", "That’s how I keep body and soul together – shining shoes. " ]
 			}, {
 				background: "stories_questions/story3.png",
-				text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters around the boy say… I can’t read them. "]
+				text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters around the boy say... I can’t read them. "]
 			}],
  			question: "What do the words around the sailor boy say?",
 			image: "stories_questions/question1.png",
