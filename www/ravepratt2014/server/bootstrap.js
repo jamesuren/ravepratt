@@ -154,10 +154,22 @@ Meteor.startup(function () {
 			}],
  			question: "What kind of clothes did the Captain give Tom?",
 			image: "stories_questions/question2.png",
-			answers: ["", "to measure weather conditions", "to measure altitutde", "to measure water depth"],
-			correctAnswer: "to measure altitude",
-			hint: "It helps sailors determine how high in the sky stars or other objects are.",
-			correctMessage: ["Great work!", "You've learned what it does!"]
+			answers: ["a set of clothes nicer than the one's Tom has", "a gentleman\'s silk waistcoat", "an antique suit of cotton", "a lieutenant\'s uniform"],
+			correctAnswer: "a lieutenant\'s uniform",
+			hint: "Tom has really worked his way up in the world.",
+			correctMessage: ["Great work!", "Congratulations, Lieutenant Binnacle!"]
+		}, {
+			story: [{
+				background: "bg0.png",
+				text: [""]
+				background: "bg1.png",
+				text: [""]
+			}, {
+				background: "bg2.png",
+				text: [""]
+			}, {
+				background: "bg2.png",
+ 				text: [""]				
 		}]
  	}, {
 		name: "Strange Cartographer",
