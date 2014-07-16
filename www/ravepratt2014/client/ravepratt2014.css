@@ -159,29 +159,36 @@ body {
     border: 1px solid;
 }
 .popUpText {
-	height:200px;
-	width:280px;
-	top:15px;
-	color:black;
-	font-family:mainFont;
-	position:absolute;
+    height: 200px;
+	width: 264px;
+	top: 15px;
+	color: black;
+	font-family: mainFont;
+	position: absolute;
+	margin: 8px;
+	line-height: 15px;
 }
 .popUpButton {
-	height:20px;
-	width:150px;
-	top:75px;
-	font-family:mainFont;
-	color:black;
-	background-color:#996aba;
-	position:fixed;
+	height: 36px;
+	width: 150px;
+	top: 95px;
+	left: 50px;
+	font-family: mainFont;
+	color: black;
+	background-color: #996aba;
+	position: absolute;
 	border: 1px solid;
 }
 .popUpStars{
 	height:568px;
 	width:320px;
-	top:50px;
+	top:65px;
+	left: 50px;
 	position:absolute;
 }
+.popUpButton span{
+	position:relative;
+}	
 .stars img {
 	width:25px;
 }
