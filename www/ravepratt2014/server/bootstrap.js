@@ -20,14 +20,14 @@ Meteor.startup(function () {
 				text: ["The parish ladies were generous last Christmas!", "Some boys bought oranges, but I set myself up with some rags and beeswax.", "That’s how I keep body and soul together – shining shoes. " ]
 			}, {
 				background: "stories_questions/story3.png",
-				text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters say… I can’t read them. "]
+				text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters around the boy say… I can’t read them. "]
 			}],
- 			question: "What is your name?",
+ 			question: "What do the words around the sailor boy say?",
 			image: "stories_questions/question1.png",
-			answers: ["Sam", "John", "Henry", "Bill"],
-			correctAnswer: "Henry",
-			hint: "It is on your birth certificate...",
-			correctMessage: ["Right!", "Information about the plate"]
+			answers: ["Maniner Boy's School", "Association of Boy Sailors", "Boys of the Ocean", "Maritime Society Boy"],
+			correctAnswer: "Maritime Society Boy",
+			hint: "The words form a circle around the boy on the coin.",
+			correctMessage: ["Right!", "The words read, \'Maritime Society Boy.\'"]
 		}, {
 			story: [{
 				background: "bg0.png",
@@ -47,7 +47,7 @@ Meteor.startup(function () {
 			image: "stories_questions/question2.png",
 			answers: ["Join the war!", "Maritime Association", "Boy Sailor Society", "Maritime Society"],
 			correctAnswer: "Maritime Society",
-			hint: "It begins with M",
+			hint: "It begins with M.",
 			correctMessage: ["Right!", "The message on the bowl reads, \'Maritime Society.\'"]		
 		}, {
 			story: [{
@@ -78,7 +78,7 @@ Meteor.startup(function () {
 		}, { 
 			story: [{
 				background: "bg0.png",
-				text: ["What you see before you is a bunch of stuff we will fill in later.", "I nearly jumped out of my skin when the voice behind me interrupted my daydreams.  I turned to face a man neatly-dressed in plain but good clothes.", "I\’m Mr. Smith and I manage this household. Look lively and follow me, Tom.”"]
+				text: ["What you see before you is a bunch of stuff we will fill in later.", "I nearly jumped out of my skin when the voice behind me interrupted my daydreams.  I turned to face a man neatly-dressed in plain but good clothes.", "I\’m Mr. Smith and I manage this household. Look lively and follow me, Tom."]
 			}, {
 				background: "bg1.png",
 				text: ["I followed him into a room.  He sat down next to a finely-dressed gentleman whom he introduced as Sir James Davenport, a governor of the Maritime Society.","Tom. How old are you?", "I didn’t know what to say. To be honest, I don’t really know.  What if I give the wrong answer? What should I say?" ]
@@ -87,7 +87,7 @@ Meteor.startup(function () {
 				text: [" ...13 years old, sir.", "Oh dear.  That didn’t sound very convincing.  Sir James raised an eyebrow and eyed me sternly over his spectacles.", "Hmph. You look of adequate height."]
 			}, {
 				background: "bg2.png",
-				text: ["Sir James went on to question me about my family connections.  As I have none, that topic was quickly exhausted.", "Then he asked about my character.  Mr. Smith must have asked around the neighbourhood because he seemed to know more about me than I did!", "But he was saying good things, so I dared not interrupt him."]			
+				text: ["Sir James went on to question me about my family connections.  As I have none, it was a short discussion.", "Then he asked about my character.  Mr. Smith must have asked around the neighbourhood because he seemed to know more about me than I did!", "But he was saying good things, so I dared not interrupt him."]			
 			}, {
 				background: "bg2.png",
 				text: ["After what seemed like an age, Sir James began to write something on a paper.  He folded it up and handed it to me.", "Appear at the ship name that I do not know training ship on Wednesday morning.  Give the man at the dock this paper.", "You are now a Maritime Society boy, Tom."]
@@ -98,6 +98,66 @@ Meteor.startup(function () {
 			correctAnswer: "I don\'t know how we will answer this.",
 			hint: "You can do it.",
 			correctMessage: ["Good work!", "You found it!"]
+		}, {
+			story: [{
+				background: "bg0.png",
+				text: ["I feel like a prince!  I have never had any new clothes in life, let alone two new shirts at the same time!  And the food!  My stomach is full every night.", "Schoolmaster Banbridge expects us to be respectful and work hard, but he is good to us."]
+			}, {
+				background: "bg1.png",
+				text: ["He keeps a log, which means he writes in a book each day what the weather is like.", "I watch him dip his pen in ink and make looping, slanted lines on the paper.", "Tom.  Would you like to learn how to make the letters?"]
+			}, {
+				background: "bg2.png",
+				text: ["Yes, sir!  If you think it is possible, sir!", "Of course it is possible!  Indeed, if you mean to go anywhere in this Navy, you will need to learn.", "Schoolmaster Banbridge thinks I am making fine progress, but I despair of ever having so elegant a hand as an officer should have. But I am doing well with stringing the letters together in my head to make words!"]
+			}, {
+				background: "bg2.png",
+				text: ["I wonder if the weather will be fine enough to work topside this week.  Tom!  Run down to the log book and tell me what the weather was like this time last year.", "I am surprised that he doesn’t want me to bring the book to him.  He actually wants me to read it and report back.", "I don\’t know if I’m that good at it yet..."]			
+			}],
+ 			question: "What was the weather like on a date which we will determine after we visit the museum?",
+			image: "stories_questions/question2.png",
+			answers: ["Sunny", "Stormy", "Windy", "Rainy"],
+			correctAnswer: "Sunny",
+			hint: "It looks they will be able to work topside.",
+			correctMessage: ["Great work!", "You read the answer!"]
+		}, {
+			story: [{
+				background: "bg0.png",
+				text: ["Well done, Tom! It looks like we can or can't work outside next week.", "In time, my script grew so refined that he passed the task of recording the weather on to me.", "Almost four years have flown past.  I find my thoughts wandering to what I will do when I complete my training... "]
+			}, {
+				background: "bg1.png",
+				text: ["One day, Schoolmaster Banbridge took me aside and told me that his nephew had gotten a commission on a naval ship.", "Congratulations, sir!  I\’m sure it is down to the excellent example of his uncle!", "He will need a boy to go along with him and act as his assistant.  As your training will end soon, I had hoped to recommend you."]
+			}, {
+				background: "bg2.png",
+				text: ["Would that be amenable to you?", "It\’s a good thing I have grown much better at not grinning like a fool noticeably.","Soon, I was off to sea!"]
+			}, {
+				background: "bg2.png",
+ 				text: ["Schoolmaster Banbridge\’s nephew, Lieutenant-Commander Carson, uses lots of fancy equipment.", "It is part of my responsibilities to keep them in top working order.", "I wonder what they all do?"]			
+			}],
+ 			question: "What is this mariner's quantrant used for?",
+			image: "stories_questions/question2.png",
+			answers: ["to measure disatnce", "to measure weather conditions", "to measure altitutde", "to measure water depth"],
+			correctAnswer: "to measure altitude",
+			hint: "It helps sailors determine how high in the sky stars or other objects are.",
+			correctMessage: ["Great work!", "You've learned what it does!"]	
+		}, {
+			story: [{
+				background: "bg0.png",
+				text: ["Lieutenant-Commander Carson does indeed follows his uncle\’s example and is keen to instruct me in the operation of navigation instruments. He tells me he often praises my quick mastery of navigation in his letters to his uncle.", "The French look poised to invade and we have received orders to sail to England’s defense."," But I happened to see our navigation calculations and now that I know how to use the instruments, I realize the calulations are slightly off.  The course will take us out of our way!"]
+			}, {
+				background: "bg1.png",
+				text: ["What should I do?  I cannot contradict a superior officer, but can we risk wasting time with so much at stake?", "With much fear, I gently suggest an alternative calculation to the Lieutenant-Commander.", "As I said, Lieutenant-Commander Carson is a good man and he thinks not of himself, but the safety of our nation.  It turns out I am right!"]
+			}, {
+				background: "bg2.png",
+				text: ["He quickly re-plots our course.", "That night, the Captain called me to his cabin.  Lieutenant-Commander Carson was also there.", "My knees were shaking. What if the Captain has found out and now I will be disciplined for attempting to correct my officer?"]
+			}, {
+				background: "bg2.png",
+ 				text: ["The Captain handed me a set of clothes.", "I did not understand, and I am sorry to report that I stood there agape.","They are hand-me-downs, but they will have to do.  There\’s a war on, you know."]			
+			}],
+ 			question: "What kind of clothes did the Captain give Tom?",
+			image: "stories_questions/question2.png",
+			answers: ["", "to measure weather conditions", "to measure altitutde", "to measure water depth"],
+			correctAnswer: "to measure altitude",
+			hint: "It helps sailors determine how high in the sky stars or other objects are.",
+			correctMessage: ["Great work!", "You've learned what it does!"]
 		}]
  	}, {
 		name: "Strange Cartographer",
