@@ -110,26 +110,35 @@ body {
 .starsTotal.disabled {
 	display:none;	
 }
-.hint span {
-	color:black;
-	position: absolute;
-	left:60px;
-	top:456px;
-	width:280px;
-}
-
 .question span{
     position: absolute;
 	left:15px;
-	top:350px;
+	top:289px;
+	font-family:mainFont;
+}
+.hint span {
+	color:black;
+	position: absolute;
+	left:15px;
+	top:300px;
+	width:280px;
+}
+.answers {
+	position: absolute;
+	left: 15px;
+	top: 325px;
 	font-family:mainFont;
 }
 
-.answers span{
+.answer span{
+	left: 0px;
+	top: 0px;
+	position:relative;
+}
+.stars{
 	position: absolute;
+	top: 528px;
 	left: 15px;
-	top: 500px;
-	font-family:mainFont;
 }
 
 /* PopUp */
