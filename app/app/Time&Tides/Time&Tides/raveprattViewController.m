@@ -13,9 +13,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
     [self loadRequestFromString:@"http://timeandtides.meteor.com/"];
-    NSLog(@"HERE!");
+    
+    _webView.scrollView.scrollEnabled = NO;
+    _webView.scrollView.bounces = NO;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
