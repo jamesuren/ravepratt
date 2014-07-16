@@ -30,16 +30,16 @@ Meteor.startup(function () {
 			correctMessage: ["Right!", "The words read, \'Maritime Society Boy.\'"]
 		}, {
 			story: [{
-				background: "bg0.png",
+				background: "stories_questions/story4.png",
 				text: ["Maritime Society again?  I wonder what that is?", "Some gentlemen are talkative while I shine their shoes.  If it won’t be bothering them, maybe I can ask... ", "Guess I should head down to my spot and get to work... What\’s that?  I haven’t seen that in the shop window before!"]
 			}, {
-				background: "bg1.png",
+				background: "stories_questions/story5.png",
 				text: ["That boy is a sailor too! I wish that could be me! I wonder why he’s changing his clothes?", "Hmmm... the shop doesn’t look too busy... only a lady and her maid in the whole place.", "I\’ll ask the shopkeeper."]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story6.png",
 				text: ["Pardon!  What\’s that about?  Is he a sailor?", "I\'m tired of you beggars robbing me! Buy something or get out!", "How do you like that?  I\’m not a beggar!  I am the proprietor of a fine shoe-polishing establishment!"]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story7.png",
 				text: ["Get out!", "But the sailor boy...", "And then be threw me out."]
 				
 			}],
@@ -51,69 +51,69 @@ Meteor.startup(function () {
 			correctMessage: ["Right!", "The message on the bowl reads, \'Maritime Society.\'"]		
 		}, {
 			story: [{
-				background: "bg0.png",
+				background: "stories_questions/story8.png",
 				text: ["I had just picked myself up when an almost grown girl came running up behind me.", "Hey there! Boy!  My mistress sent me to tell you that the boy got his clothes from the Maritime Society.", "The Maritime Society!  I felt a shiver run down my spine."]
 			}, {
-				background: "bg1.png",
+				background: "stories_questions/story9.png",
 				text: ["It provides boys with no prospects with the things they need to become a sailor.","The beautiful lady on the bowl is England. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story10.png",
 				text: ["The girl smiled... I think she might have been laughing at me.", "Well, such excellent prospects indeed!  But for some reason Lady Aurelia believes you may be better suited to the sea. She requests that you appear at her kitchen entrance first thing tomorrow.", "Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business."]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story11.png",
 				text: ["I was grinning like a fool!", "But I quickly put on the grownup voice I use with my customers, thanked the girl, and commended my thanks to her lady.", "She actually laughed out loud at me, but I don’t care!  Me!  A sailor!"]			
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story12.png",
 				text: ["When the first bells rang to start the day, I figured I could finally appear to the door.  Such a grand home!", "I knocked on the door.  My heart started pounding.  Suddenly, I noticed that my breeches had a hole at the knee and my shirt was no longer white, but a gloomy shade of grey...", "You must be our Maritime Society boy!"]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story13.png",
 				text: ["An older woman in an apron sized me up. Then reached out and started to rake her fingers through my unruly hair before straightening my shirt. Then she stepped back and smiled.", "She patted me on the shoulder, led me down a long hallway, and bid me to wait there until Mr. Smith called me in.", "I had no time to think about the butterflies in my stomach because I immediately laid eyes on the most glorious thing I have ever seen!"]
 			}],
  			question: "What is this a painting of?",
-			image: "stories_questions/question2.png",
+			image: "stories_questions/question3.png",
 			answers: ["Who knows?", "When we find the painting,", "We will add it.", "Use your imagination for now."],
 			correctAnswer: "We will add it.",
 			hint: "Figure it out, Sherlock.",
 			correctMessage: ["Right!", "The correct answer will be here."]	
 		}, { 
 			story: [{
-				background: "bg0.png",
+				background: "stories_questions/story14.png",
 				text: ["What you see before you is a bunch of stuff we will fill in later.", "I nearly jumped out of my skin when the voice behind me interrupted my daydreams.  I turned to face a man neatly-dressed in plain but good clothes.", "I\’m Mr. Smith and I manage this household. Look lively and follow me, Tom."]
 			}, {
-				background: "bg1.png",
+				background: "stories_questions/story15.png",
 				text: ["I followed him into a room.  He sat down next to a finely-dressed gentleman whom he introduced as Sir James Davenport, a governor of the Maritime Society.","Tom. How old are you?", "I didn’t know what to say. To be honest, I don’t really know.  What if I give the wrong answer? What should I say?" ]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story16.png",
 				text: [" ...13 years old, sir.", "Oh dear.  That didn’t sound very convincing.  Sir James raised an eyebrow and eyed me sternly over his spectacles.", "Hmph. You look of adequate height."]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story17.png",
 				text: ["Sir James went on to question me about my family connections.  As I have none, it was a short discussion.", "Then he asked about my character.  Mr. Smith must have asked around the neighbourhood because he seemed to know more about me than I did!", "But he was saying good things, so I dared not interrupt him."]			
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story18.png",
 				text: ["After what seemed like an age, Sir James began to write something on a paper.  He folded it up and handed it to me.", "Appear at the ship name that I do not know training ship on Wednesday morning.  Give the man at the dock this paper.", "You are now a Maritime Society boy, Tom."]
 			}],
  			question: "Can you find the training ship?",
-			image: "stories_questions/question2.png",
+			image: "stories_questions/question4.png",
 			answers: ["I don\'t know how we will answer this.", "Will we put other ships here?,", "Hm. I wonder", "Use your imagination for now."],
 			correctAnswer: "I don\'t know how we will answer this.",
 			hint: "You can do it.",
 			correctMessage: ["Good work!", "You found it!"]
 		}, {
 			story: [{
-				background: "bg0.png",
+				background: "stories_questions/story19.png",
 				text: ["I feel like a prince!  I have never had any new clothes in life, let alone two new shirts at the same time!  And the food!  My stomach is full every night.", "Schoolmaster Banbridge expects us to be respectful and work hard, but he is good to us."]
 			}, {
-				background: "bg1.png",
+				background: "stories_questions/story20.png",
 				text: ["He keeps a log, which means he writes in a book each day what the weather is like.", "I watch him dip his pen in ink and make looping, slanted lines on the paper.", "Tom.  Would you like to learn how to make the letters?"]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story21.png",
 				text: ["Yes, sir!  If you think it is possible, sir!", "Of course it is possible!  Indeed, if you mean to go anywhere in this Navy, you will need to learn.", "Schoolmaster Banbridge thinks I am making fine progress, but I despair of ever having so elegant a hand as an officer should have. But I am doing well with stringing the letters together in my head to make words!"]
 			}, {
 				background: "bg2.png",
 				text: ["I wonder if the weather will be fine enough to work topside this week.  Tom!  Run down to the log book and tell me what the weather was like this time last year.", "I am surprised that he doesn’t want me to bring the book to him.  He actually wants me to read it and report back.", "I don\’t know if I’m that good at it yet..."]			
 			}],
  			question: "What was the weather like on a date which we will determine after we visit the museum?",
-			image: "stories_questions/question2.png",
+			image: "stories_questions/question5.png",
 			answers: ["Sunny", "Stormy", "Windy", "Rainy"],
 			correctAnswer: "Sunny",
 			hint: "It looks they will be able to work topside.",
