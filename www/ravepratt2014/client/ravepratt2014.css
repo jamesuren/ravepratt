@@ -11,8 +11,6 @@ html {
 }
 body {
 	margin: 0px;
-	position: relative;
-	top:-24px;
 }
 #container {
 	width: 320px;
@@ -22,7 +20,7 @@ body {
 /* Character selection */
 .characters {
 	margin: 10px;
-	margin-top: 46px;
+	margin-top: 22px;
 }
 .character img {
 	width: 300px;
@@ -36,7 +34,6 @@ body {
 
 /* Story */
 .story {	
-	margin-top:40px;
     font-family:mainFont;
 }
 .top {
