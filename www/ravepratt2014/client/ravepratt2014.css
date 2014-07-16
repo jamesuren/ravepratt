@@ -155,7 +155,7 @@ body {
 	top:184px;
 	left:20px;
 	background-color:#ddccbf;
-	position:fixed;
+	position:absolute;
     border: 1px solid;
 }
 .popUpText {
@@ -177,7 +177,7 @@ body {
 .popUpStars{
 	height:568px;
 	width:320px;
-	top:40px;
+	top:50px;
 	position:absolute;
 }
 .stars img {
