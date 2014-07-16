@@ -162,6 +162,7 @@ Meteor.startup(function () {
 			story: [{
 				background: "bg0.png",
 				text: [""]
+			}, {
 				background: "bg1.png",
 				text: [""]
 			}, {
@@ -169,7 +170,8 @@ Meteor.startup(function () {
 				text: [""]
 			}, {
 				background: "bg2.png",
- 				text: [""]				
+ 				text: [""]		
+			}]	
 		}]
  	}, {
 		name: "Strange Cartographer",
