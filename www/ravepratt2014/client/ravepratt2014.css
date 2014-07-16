@@ -11,6 +11,7 @@ html {
 }
 body {
 	margin: 0px;
+	background-color: #ddccbf
 }
 #container {
 	width: 320px;
@@ -157,19 +158,19 @@ body {
 }
 .popUpText {
     height: 200px;
-	width: 264px;
+	width: 256px;
 	top: 15px;
 	color: black;
 	font-family: mainFont;
 	position: absolute;
-	margin: 8px;
+	margin: 12px;
 	line-height: 15px;
 }
 .popUpButton {
 	height: 36px;
 	width: 150px;
 	top: 95px;
-	left: 50px;
+	left: 62px;
 	font-family: mainFont;
 	color: black;
 	background-color: #996aba;
@@ -178,13 +179,14 @@ body {
 }
 .popUpStars{
 	height:568px;
-	width:320px;
+	width:280px;
 	top:65px;
-	left: 50px;
+	left: 0px;
 	position:absolute;
 }
 .popUpButton span{
 	position:relative;
+	text-align: center;
 }	
 .stars img {
 	width:25px;

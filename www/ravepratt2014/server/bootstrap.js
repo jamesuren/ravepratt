@@ -20,7 +20,7 @@ Meteor.startup(function () {
 				text: ["The parish ladies were generous last Christmas!", "Some boys bought oranges, but I set myself up with some rags and beeswax.", "That’s how I keep body and soul together – shining shoes. " ]
 			}, {
 				background: "stories_questions/story3.png",
-				text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters around the boy say… I can’t read them. "]
+				text: ["I sure am hungry, but I don\’t want to part with this halfpenny I got from a gentleman.  Look! ", "On the back it\’s got a grown sailor, but this sailor on the front is a boy! ", "I wonder what the letters around the boy say... I can’t read them. "]
 			}],
  			question: "What do the words around the sailor boy say?",
 			image: "stories_questions/question1.png",
@@ -161,17 +161,14 @@ Meteor.startup(function () {
 		}, {
 			story: [{
 				background: "bg0.png",
-				text: [""]
+				text: ["You’ll have to pass an examination to become a lieutenant... ", "But I’m sure we can carry that out aboard ship.", "We are short lieutenants and need all the good men we can get right now!"]
 			}, {
 				background: "bg1.png",
-				text: [""]
+				text: ["And that is how I became an officer.","I hope I can be as good a leader to my men as Schoolmaster Banbridge and Lieutenant-Commander Carson were to me.", "We are on our way to a place off the coast of Spain called Trafalgar."]
 			}, {
 				background: "bg2.png",
-				text: [""]
-			}, {
-				background: "bg2.png",
- 				text: [""]		
-			}]	
+				text: ["There looks to be a fierce battle ahead of us...", "But I am confident in our courage.", "And in the pocket of my fine uniform, will be that that small halfpenny that once filled a shoe shine boy in rags with wonder."]	
+			}]
 		}]
  	}, {
 		name: "Strange Cartographer",
