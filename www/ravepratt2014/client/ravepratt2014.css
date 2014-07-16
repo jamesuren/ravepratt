@@ -148,6 +148,17 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
+.popUp{
+	height:568px;
+	width:320px;
+	top:200px;
+	bottom:450px;
+	color:red;
+	position:absolute;
+	text-align: center;
+	vertical-align: middle;
+}
 .popUpText {
 	height:568px;
 	width:320px;
