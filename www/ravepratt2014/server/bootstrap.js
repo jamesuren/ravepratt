@@ -40,7 +40,7 @@ Meteor.startup(function () {
 				text: ["\"Pardon!  What\’s that about?  Is he a sailor?\"", "\"I\'m tired of you beggars robbing me! Buy something or get out!\" the shopkeeper roared at me.", "\"How do you like that?  I\’m not a beggar!  I am the proprietor of a fine shoe-polishing establishment!\""]
 			}, {
 				background: "stories_questions/story7.png",
-				text: ["The shopkeeper yelled again, \"Get out!\"", "\"But the sailor boy...\"", "And then be threw me out."]
+				text: ["The shopkeeper yelled again, \"Get out!\"", "\"But the sailor boy...\"", "And then he threw me out."]
 				
 			}],
  			question: "Find the bowl in the Atlantic: Navy, Trade, Empire Gallery on the 1st floor. Who are the women on the bowl?",
@@ -109,7 +109,7 @@ Meteor.startup(function () {
 				background: "stories_questions/story21.png",
 				text: ["Yes, sir!  If you think it is possible, sir!", "Of course it is possible!  Indeed, if you mean to go anywhere in this Navy, you will need to learn.", "Schoolmaster Banbridge thinks I am making fine progress, but I despair of ever having so elegant a hand as an officer should have. But I am doing well with stringing the letters together in my head to make words!"]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story25.png",
 				text: ["Tom!  Run down to the log book and tell me the wind direction was this time last Wednesday.", "I am surprised that he doesn’t want me to bring the book to him.  He actually wants me to read it and report back.", "I don\’t know if I’m that good at it yet..."]			
 			}],
  			question: "Find the weather log from the 1700s in the Environment Gallery.  What was the second recorded wind direction on Wednesday, the 17th?",
@@ -120,16 +120,16 @@ Meteor.startup(function () {
 			correctMessage: ["Great work!", "You read the answer!"]
 		}, {
 			story: [{
-				background: "bg0.png",
+				background: "stories_questions/story28.png",
 				text: ["Good work, Tom!", "In time, my script grew so refined that he passed the task of recording the weather on to me.", "Almost four years have flown past.  I find my thoughts wandering to what I will do when I complete my training... "]
 			}, {
-				background: "bg1.png",
+				background: "stories_questions/story24.png",
 				text: ["One day, Schoolmaster Banbridge took me aside and told me that his nephew had gotten a commission on a naval ship.", "Congratulations, sir!  I\’m sure it is down to the excellent example of his uncle!", "He will need a boy to go along with him and act as his assistant.  As your training will end soon, I had hoped to recommend you."]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story22.png",
 				text: ["Would that be amenable to you?", "It\’s a good thing I have grown much better at not grinning like a fool noticeably.","Soon, I was off to sea!"]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story29.png",
  				text: ["Schoolmaster Banbridge\’s nephew, Lieutenant-Commander Carson, uses lots of fancy equipment.", "It is part of my responsibilities to keep them in top working order.", "I wonder what they all do?"]			
 			}],
  			question: "Find the instrument from the picture in the Maritime London: 1700 to Now gallery on the ground floor.  What is it called?",
@@ -140,13 +140,13 @@ Meteor.startup(function () {
 			correctMessage: ["Great work!", "You are on your way to learning all the navigation instruments!"]	
 		}, {
 			story: [{
-				background: "bg0.png",
+				background: "stories_questions/story14.png",
 				text: ["Lieutenant-Commander Carson does indeed follows his uncle\’s example and is keen to instruct me in the operation of navigation instruments. He tells me he often praises my quick mastery of navigation in his letters to his uncle.", "The French look poised to invade and we have received orders to sail to England’s defense."," But I happened to see our navigation calculations and now that I know how to use the instruments, I realize the calulations are slightly off.  The course will take us out of our way!"]
 			}, {
-				background: "bg1.png",
+				background: "stories_questions/story27.png",
 				text: ["What should I do?  I cannot contradict a superior officer, but can we risk wasting time with so much at stake?", "With much fear, I gently suggest an alternative calculation to the Lieutenant-Commander.", "As I said, Lieutenant-Commander Carson is a good man and he thinks not of himself, but the safety of our nation.  It turns out I am right!"]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story26.png",
 				text: ["He quickly re-plots our course.", "That night, the Captain called me to his cabin.  Lieutenant-Commander Carson was also there.", "My knees were shaking. What if the Captain has found out and now I will be disciplined for attempting to correct my officer?"]
 			}, {
 				background: "bg2.png",
