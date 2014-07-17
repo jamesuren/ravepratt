@@ -133,7 +133,7 @@ Meteor.startup(function () {
  				text: ["Schoolmaster Banbridge\’s nephew, Lieutenant-Commander Carson, uses lots of fancy equipment.", "It is part of my responsibilities to keep them in top working order.", "I wonder what they all are?"]			
 			}],
  			question: "Find the instrument from the picture in the Maritime London: 1700 to Now gallery on the ground floor.  What is it called?",
-			image: "stories_questions/question2.png",
+			image: "stories_questions/question6.png",
 			answers: ["mariner's quadrant", "telescope", "theodolite", "pocket chronometer"],
 			correctAnswer: "theodolite",
 			hint: "It was made in 1773 of brass and glass.",
@@ -153,7 +153,7 @@ Meteor.startup(function () {
  				text: ["The Captain handed me a set of clothes.", "I did not understand, and I am sorry to report that I stood there agape.","\"They are hand-me-downs, but they will have to do,\" the Captain stated.  \"There\’s a war on, you know.\""]			
 			}],
  			question: "Find the information portals on the ground floor, adjacent to the Explorers: the Americas and North-West Passage gallery.  Do a search for \"ZBA4957.\" What are the clothes Tom has been given?",
-			image: "stories_questions/question2.png",
+			image: "stories_questions/question7.png",
 			answers: ["a set of clothes nicer than the one's Tom has", "a gentleman\'s silk waistcoat", "an antique suit of cotton", "a lieutenant\'s uniform"],
 			correctAnswer: "a lieutenant\'s uniform",
 			hint: "Tom has really worked his way up in the world.",
@@ -163,7 +163,7 @@ Meteor.startup(function () {
 				background: "stories_questions/story30.png",
 				text: ["\"You’ll have to pass an examination to become a lieutenant... \" the Captain began.", "\"But I’m sure we can carry that out aboard ship.\"", "\"We are short lieutenants and need all the good men we can get right now!\""]
 			}, {
-				background: "stories_questions/story31.png.png",
+				background: "stories_questions/story31.png",
 				text: ["And that is how I became an officer.","I hope I can be as good a leader to my men as Schoolmaster Banbridge and Lieutenant-Commander Carson were to me.", "We are on our way to a place off the coast of Spain called Trafalgar."]
 			}, {
 				background: "stories_questions/story32.png",
