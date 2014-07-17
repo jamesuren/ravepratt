@@ -40,14 +40,14 @@ body {
 .top {
 	position:absolute;
 	left:63px;
-	top:40px;
+	top:38px;
 	width:230px;
 	line-height: 17px;
 }
 .middle {	
 	position:absolute;
 	left:15px;
-	top:247px;
+	top:245px;
 	width:240px;
 	line-height: 17px;
 }
@@ -60,10 +60,10 @@ body {
 }
 .previous.button {
 	left: 10px;
-	top: -118px;
+	top: 460px;
 	height: 100px;
 	width: 100px;
-	position:relative;	
+	position:absolute;	
 }
 .previousButtonArrow{
 	font-size:150%;
@@ -122,12 +122,12 @@ body {
 
 .starsTotal {
     position: absolute;
-	left:240px;
-	top:35px;
-	background-color:#996aba;
-	font-family:mainFont;
-	height:30px;
-	width: 70px;
+	left: 230px;
+	top: 35px;
+	background-color: #996aba;
+	font-family: mainFont;
+	height: 30px;
+	width: 80px;
 	border-style:solid;
 	border-width:1px;
 	border-color:black;
@@ -201,7 +201,7 @@ body {
 }
 
 .popUp{
-	height:150px;
+	height:180px;
 	width:280px;
 	top:184px;
 	left:20px;
@@ -222,7 +222,7 @@ body {
 .popUpButton {
 	height: 36px;
 	width: 150px;
-	top: 95px;
+	top: 115px;
 	left: 62px;
 	font-family: mainFont;
 	color: black;
@@ -233,7 +233,7 @@ body {
 .popUpStars{
 	height:568px;
 	width:280px;
-	top:65px;
+	top:85px;
 	left: 0px;
 	position:absolute;
 }
