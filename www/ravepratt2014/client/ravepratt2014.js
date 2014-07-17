@@ -67,8 +67,10 @@ Template.answer.events( {
 		}
 		else {
 			// Wrong answer
-			Session.set("reward", reward-1);				
-			if (reward > 3) {
+			Session.set("reward", reward-1);
+			console.log(answersSelected);	
+			console.log(answersSelected.length);			
+			if (answersSelected.length < 2) {
 				// Show try again pop-up
 				console.log("Clicked wrong answer. Try again.");
 				Session.set("popUpText", "Try again!");

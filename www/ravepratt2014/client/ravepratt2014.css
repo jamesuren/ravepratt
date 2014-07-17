@@ -159,6 +159,10 @@ body {
 	color: black;
 	background-color: #996aba;
 	border: 1px solid;
+
+}
+.answer.disabled {
+	display:none;
 }
 .answer span{
 	padding: 8px;
