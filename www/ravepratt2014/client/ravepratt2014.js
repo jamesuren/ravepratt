@@ -81,7 +81,7 @@ Template.answer.events( {
 			else {
 				// No more try-agains. Show continue pop-up
 				console.log("Clicked wrong answer. No more try-agains.");
-				Session.set("popUpText", "Totally wrong");
+				Session.set("popUpText", "Three wrong answers. Better luck next time!");
 				Session.set("popUpButtonText", "Continue");
 				Session.set("quest", quest + 1);
 				Session.set("story", 0);
