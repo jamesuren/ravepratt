@@ -69,7 +69,7 @@ Meteor.startup(function () {
 				background: "stories_questions/story13.png",
 				text: ["An older woman in an apron sized me up. She frowned then raked her fingers through my unruly hair before stepping back and smiling.", "She patted me on the shoulder, led me down a long hallway, and bid me to wait there until Mr. Smith called me in.", "I had no time to think about the butterflies in my stomach because I immediately laid eyes on the most glorious thing I have ever seen!"]
 			}],
- 			question: "Find the painting entitled \'View of Mr Perry's Yard, Blackwall\' in the Traders: the East India Company and Asia gallery on the 1st floor. Can you find the mast house? What color is it?",
+ 			question: "Find the painting \'View of Mr Perry's Yard, Blackwall\' in the Traders gallery (1st floor). What color is the mast house?",
 			image: "stories_questions/question3.png",
 			answers: ["Purple", "Red", "Green", "Yellow"],
 			correctAnswer: "Red",
@@ -112,7 +112,7 @@ Meteor.startup(function () {
 				background: "stories_questions/story25.png",
 				text: ["\"Tom!\" called Schoolmaster Banbridge, \"Run down to the log book and tell me the wind direction was this time last Wednesday.\"", "I am surprised that he doesn’t want me to bring the book to him.  He actually wants me to read it and report back.", "I don\’t know if I’m that good at it yet..."]			
 			}],
- 			question: "Find the weather log from the 1700s in the Environment Gallery.  What was the second recorded wind direction on Wednesday, the 17th?",
+ 			question: "Find the old weather log in the Environment Gallery.  What was the 2nd recorded wind direction on Wednesday, the 17th?",
 			image: "stories_questions/question5.png",
 			answers: ["West", "East", "North Northeast", "South"],
 			correctAnswer: "East",
@@ -134,8 +134,8 @@ Meteor.startup(function () {
 			}],
  			question: "Find the instrument from the picture in the Maritime London: 1700 to Now gallery on the ground floor.  What is it called?",
 			image: "stories_questions/question6.png",
-			answers: ["mariner's quadrant", "telescope", "theodolite", "pocket chronometer"],
-			correctAnswer: "theodolite",
+			answers: ["Mariner's Quadrant", "Telescope", "Theodolite", "Pocket Chronometer"],
+			correctAnswer: "Theodolite",
 			hint: "It was made in 1773 of brass and glass.",
 			correctMessage: ["Great work! You are on your way to learning all the navigation instruments!"]	
 		}, {
@@ -152,10 +152,10 @@ Meteor.startup(function () {
 				background: "stories_questions/story33.png",
  				text: ["The Captain handed me a set of clothes.", "I did not understand, and I am sorry to report that I stood there agape.","\"They are hand-me-downs, but they will have to do,\" the Captain stated.  \"There\’s a war on, you know.\""]			
 			}],
- 			question: "Find the information portals on the ground floor, adjacent to the Explorers: the Americas and North-West Passage gallery.  Do a search for \"ZBA4957.\" What are the clothes Tom has been given?",
+ 			question: "Find the information portals on the ground floor.  Do a search for \"ZBA4957.\" What are the clothes Tom has been given?",
 			image: "stories_questions/question7.png",
-			answers: ["a set of clothes nicer than the one's Tom has", "a gentleman\'s silk waistcoat", "an antique suit of cotton", "a lieutenant\'s uniform"],
-			correctAnswer: "a lieutenant\'s uniform",
+			answers: ["A nicer set of clothes", "A gentleman\'s silk waistcoat", "An antique suit of cotton", "A lieutenant\'s uniform"],
+			correctAnswer: "A lieutenant\'s uniform",
 			hint: "Tom has really worked his way up in the world.",
 			correctMessage: ["Great work! Congratulations, Lieutenant Binnacle!"]
 		}, {
