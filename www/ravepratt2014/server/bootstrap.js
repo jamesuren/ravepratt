@@ -26,7 +26,7 @@ Meteor.startup(function () {
 			image: "stories_questions/question1.png",
 			answers: ["Mariner Boy's School", "Association of Boy Sailors", "Boys of the Ocean", "A Maritime Society Boy"],
 			correctAnswer: "A Maritime Society Boy",
-			hint: "It is in a corner under the words \'Joining up.\'",
+			hint: "It is in a corner of the gallery, under the words \'Joining up.\'",
 			correctMessage: ["Right!", "The words read, \'A Maritime Society Boy.\'"]
 		}, {
 			story: [{
@@ -37,34 +37,34 @@ Meteor.startup(function () {
 				text: ["I wonder who the ladies are? What is she pointing to? That boy is a sailor too!", "Hmmm... the shop doesn’t look too busy... only a lady and her maid in the whole place.", "I\’ll ask the shopkeeper."]
 			}, {
 				background: "stories_questions/story6.png",
-				text: ["Pardon!  What\’s that about?  Is he a sailor?", "I\'m tired of you beggars robbing me! Buy something or get out!", "How do you like that?  I\’m not a beggar!  I am the proprietor of a fine shoe-polishing establishment!"]
+				text: ["\"Pardon!  What\’s that about?  Is he a sailor?\"", "\"I\'m tired of you beggars robbing me! Buy something or get out!\" the shopkeeper roared at me.", "\"How do you like that?  I\’m not a beggar!  I am the proprietor of a fine shoe-polishing establishment!\""]
 			}, {
 				background: "stories_questions/story7.png",
-				text: ["Get out!", "But the sailor boy...", "And then be threw me out."]
+				text: ["The shopkeeper yelled again, \"Get out!\"", "\"But the sailor boy...\"", "And then be threw me out."]
 				
 			}],
  			question: "Find the bowl in the Atlantic: Navy, Trade, Empire Gallery on the 1st floor. Who are the women on the bowl?",
 			image: "stories_questions/question2.png",
 			answers: ["Britannia and Charity", "Athena and Aphrodite", "Calliope and Thalia", "Industry and Hope"],
-			correctAnswer: "Brtiannia and Charity",
+			correctAnswer: "Britannia and Charity",
 			hint: "One of the names has to do with giving to others.",
 			correctMessage: ["Right!", "The women represent Charity and Britain."]		
 		}, {
 			story: [{
 				background: "stories_questions/story8.png",
-				text: ["I had just picked myself up when an almost grown girl came running up behind me.", "Hey there! Boy!  My mistress sent me to tell you that the boy got his clothes from the Maritime Society.", "The Maritime Society!  I felt a shiver run down my spine."]
+				text: ["I had just picked myself up when an almost grown girl came running up behind me.", "\"Hey there! Boy!\" the girl called after me.  \"My mistress sent me to tell you that the boy got his clothes from the Maritime Society.\"", "The Maritime Society!  I felt a shiver run down my spine."]
 			}, {
 				background: "stories_questions/story9.png",
-				text: ["It provides boys with no prospects with the things they need to become a sailor.","The one of the beautiful ladies on the bowl is Britain. She needs good sailors!  Do you have friends or family?", "I don’t need any!  I’m the proprietor of a fine-" ]
+				text: ["The girl contnued, \"It provides boys with no prospects with the things they need to become a sailor.\"","\"One of the beautiful ladies on the bowl is Britain. She needs good sailors!  Do you have friends or family?\"", "I explained, \"I don’t need any!  I’m the proprietor of a fine-\"" ]
 			}, {
 				background: "stories_questions/story10.png",
-				text: ["The girl smiled... I think she might have been laughing at me.", "Well, such excellent prospects indeed!  But for some reason Lady Aurelia believes you may be better suited to the sea. She requests that you appear at her kitchen entrance first thing tomorrow.", "Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business."]
+				text: ["The girl smiled... I think she might have been laughing at me. \"Well,\" she said, \"such excellent prospects indeed!\"","\"But Lady Aurelia believes you may be better suited to the sea.  She requests that you appear at her kitchen entrance first thing tomorrow.\"", "\"Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business.\""]
 			}, {
 				background: "stories_questions/story11.png",
 				text: ["I was grinning like a fool!", "But I quickly put on the grownup voice I use with my customers, thanked the girl, and commended my thanks to her lady.", "She actually laughed out loud at me, but I don’t care!  Me!  A sailor!"]			
 			}, {
 				background: "stories_questions/story12.png",
-				text: ["When the first bells rang to start the day, I figured I could finally appear to the door.  Such a grand home!", "I knocked on the door.  My heart started pounding.  Suddenly, I noticed that my breeches had a hole at the knee and my shirt was no longer white, but a gloomy shade of grey...", "You must be our Maritime Society boy!"]
+				text: ["When the first bells rang to start the day, I figured I could finally appear to the door.  Such a grand home!", "I knocked on the door.  Suddenly, I noticed that my breeches had a hole at the knee and my shirt was no longer white, but a gloomy shade of grey...", "You must be our Maritime Society boy!"]
 			}, {
 				background: "stories_questions/story13.png",
 				text: ["An older woman in an apron sized me up. Then reached out and started to rake her fingers through my unruly hair before straightening my shirt. Then she stepped back and smiled.", "She patted me on the shoulder, led me down a long hallway, and bid me to wait there until Mr. Smith called me in.", "I had no time to think about the butterflies in my stomach because I immediately laid eyes on the most glorious thing I have ever seen!"]
@@ -152,7 +152,7 @@ Meteor.startup(function () {
 				background: "bg2.png",
  				text: ["The Captain handed me a set of clothes.", "I did not understand, and I am sorry to report that I stood there agape.","They are hand-me-downs, but they will have to do.  There\’s a war on, you know."]			
 			}],
- 			question: "Find the something something in the something something gallery on the something floor.  What are the clothes Tom has been given?",
+ 			question: "Find the inforamtion ortals on the gound floor, opposite the figureheads.  Do a search for \"ZBA4957.\" What are the clothes Tom has been given?",
 			image: "stories_questions/question2.png",
 			answers: ["a set of clothes nicer than the one's Tom has", "a gentleman\'s silk waistcoat", "an antique suit of cotton", "a lieutenant\'s uniform"],
 			correctAnswer: "a lieutenant\'s uniform",
