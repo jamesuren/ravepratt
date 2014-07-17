@@ -46,7 +46,7 @@ Meteor.startup(function () {
  			question: "Find the bowl in the Atlantic: Navy, Trade, Empire Gallery on the 1st floor. Who are the women on the bowl?",
 			image: "stories_questions/question2.png",
 			answers: ["Britannia and Charity", "Athena and Aphrodite", "Calliope and Thalia", "Industry and Hope"],
-			correctAnswer: "Brtiannia and Charity",
+			correctAnswer: "Britannia and Charity",
 			hint: "One of the names has to do with giving to others.",
 			correctMessage: ["Right!", "The women represent Charity and Britain."]		
 		}, {
@@ -58,13 +58,13 @@ Meteor.startup(function () {
 				text: ["The girl contnued, \"It provides boys with no prospects with the things they need to become a sailor.\"","\"One of the beautiful ladies on the bowl is Britain. She needs good sailors!  Do you have friends or family?\"", "I explained, \"I don’t need any!  I’m the proprietor of a fine-\"" ]
 			}, {
 				background: "stories_questions/story10.png",
-				text: ["The girl smiled... I think she might have been laughing at me.", "\"Well,\" she said, \"such excellent prospects indeed!  But for some reason Lady Aurelia believes you may be better suited to the sea. She requests that you appear at her kitchen entrance first thing tomorrow.\"", "\"Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business.\""]
+				text: ["The girl smiled... I think she might have been laughing at me. \"Well,\" she said, \"such excellent prospects indeed!\"","\"But Lady Aurelia believes you may be better suited to the sea.  She requests that you appear at her kitchen entrance first thing tomorrow.\"", "\"Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business.\""]
 			}, {
 				background: "stories_questions/story11.png",
 				text: ["I was grinning like a fool!", "But I quickly put on the grownup voice I use with my customers, thanked the girl, and commended my thanks to her lady.", "She actually laughed out loud at me, but I don’t care!  Me!  A sailor!"]			
 			}, {
 				background: "stories_questions/story12.png",
-				text: ["When the first bells rang to start the day, I figured I could finally appear to the door.  Such a grand home!", "I knocked on the door.  My heart started pounding.  Suddenly, I noticed that my breeches had a hole at the knee and my shirt was no longer white, but a gloomy shade of grey...", "You must be our Maritime Society boy!"]
+				text: ["When the first bells rang to start the day, I figured I could finally appear to the door.  Such a grand home!", "I knocked on the door.  Suddenly, I noticed that my breeches had a hole at the knee and my shirt was no longer white, but a gloomy shade of grey...", "You must be our Maritime Society boy!"]
 			}, {
 				background: "stories_questions/story13.png",
 				text: ["An older woman in an apron sized me up. Then reached out and started to rake her fingers through my unruly hair before straightening my shirt. Then she stepped back and smiled.", "She patted me on the shoulder, led me down a long hallway, and bid me to wait there until Mr. Smith called me in.", "I had no time to think about the butterflies in my stomach because I immediately laid eyes on the most glorious thing I have ever seen!"]
