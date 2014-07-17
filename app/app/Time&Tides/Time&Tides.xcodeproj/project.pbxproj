@@ -468,6 +468,7 @@
 				C7DF4B6E1973FC44005338F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7DF4B6F1973FC44005338F9 /* Build configuration list for PBXNativeTarget "Time&TidesTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +477,7 @@
 				C7DF4B711973FC44005338F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

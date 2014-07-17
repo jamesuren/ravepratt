@@ -54,39 +54,48 @@ body {
 .bottom {
 	position:absolute;
 	left:15px;
-	top:456px;
+	top:453px;
 	width:280px;
 	line-height: 17px;
 }
 .previous.button {
-	left:10px;
+	left: 10px;
+	top: -118px;
+	height: 100px;
+	width: 100px;
+	position:relative;	
+}
+.previousButtonArrow{
 	font-size:150%;
 	font-family:Tahoma;
-	top:-50px;
-	position:relative;
 	height: 30px;
 	width: 30px;
+	position: relative;
+	top: 68px;
 	line-height: 30px;
 	border-style:solid;
-	border-width:1px;
-	border-color:black;
-	background-color: #996aba;
+	background-color: rgba(0,0,0,0.1);
 	color: black;
 	text-align: center;  	
 }
 .next.button{
-	left:267px;
+	left: 205px;
+	top: 460px;
+	height: 100px;
+	width: 100px;
+	position:absolute;
+}
+.nextButtonArrow{
 	font-size:150%;
 	font-family:Tahoma;
-	top:529px;
-	position:absolute;
 	height: 30px;
 	width: 30px;
+	position:relative;
+	top:68px;
+	left: 68px;
 	line-height: 30px;
 	border-style:solid;
-	border-width:1px;
-	border-color:black;
-	background-color: #996aba;
+	background-color: rgba(0,0,0,0.1);
 	color: black;
 	text-align: center;
 }
@@ -140,13 +149,20 @@ body {
 .answers {
 	position: absolute;
 	left: 15px;
-	top: 325px;
+	top: 359px;
 	font-family:mainFont;
 }
-
+.answer {
+	height: 27px;
+	margin-top: 5px;
+	font-family: mainFont;
+	color: black;
+	background-color: #996aba;
+	border: 1px solid;
+}
 .answer span{
-	left: 0px;
-	top: 0px;
+	padding: 8px;
+	top: -2px;
 	position:relative;
 }
 .questionStars span{
