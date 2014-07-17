@@ -183,7 +183,21 @@ Template.starsTotal.starsTotalEnabled = function (){
 	return "disabled";
 	
 };	
-
+/*
+ * Page Number hooks
+ */
+Template.storyPageNumber.pageNum = function(){
+	var page = Session.get("story");
+	return page + 1;
+}
+Template.storyPageNumber.totalPages = function(){
+	var storyLength = getQuest().story.length;
+	return storyLength;
+}
+Template.storyQuestionNumber.questionNumber = function(){
+	var number = Session.get("quest");
+	return number + 1;
+}
 /*
  * Data hooks
  */

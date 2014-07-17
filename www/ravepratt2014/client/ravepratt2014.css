@@ -99,6 +99,11 @@ body {
 	color: black;
 	text-align: center;
 }
+.storyPageNumber{
+	position:absolute;
+	top: 529px;
+	left: 150px;
+}
 
 /* Question */
 .questionText{
@@ -108,6 +113,11 @@ body {
 	height: 80px;
 	left: 16px;
 	width: 288px;
+}
+.storyQuestionNumber{
+	position:absolute;
+	top: 355px;
+	left: 254px;
 }
 
 .starsTotal {
