@@ -124,7 +124,7 @@ body {
     position: absolute;
 	left: 230px;
 	top: 35px;
-	background-color: #996aba;
+	background-color: #00afc5;
 	font-family: mainFont;
 	height: 30px;
 	width: 80px;
@@ -147,7 +147,7 @@ body {
 	top: 509px;
 	width: 100px;
 	height: 40px;
-	background-color: #996aba;
+	background-color: #00afc5;
 	border: 1px solid;
 }
 .hint span {
@@ -167,7 +167,7 @@ body {
 	margin-top: 5px;
 	font-family: mainFont;
 	color: black;
-	background-color: #996aba;
+	background-color: #00afc5;
 	border: 1px solid;
 
 }
@@ -226,7 +226,7 @@ body {
 	left: 62px;
 	font-family: mainFont;
 	color: black;
-	background-color: #996aba;
+	background-color: #00afc5;
 	position: absolute;
 	border: 1px solid;
 }
