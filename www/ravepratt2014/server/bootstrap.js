@@ -24,20 +24,20 @@ Meteor.startup(function () {
 			}],
  			question: "Find the coin in Nelson, Navy, Nation Gallery on the 2nd floor. What do the words around the sailor boy say?",
 			image: "stories_questions/question1.png",
-			answers: ["Mariner Boy's School", "Association of Boy Sailors", "Boys of the Ocean", "A Maritime Society Boy"],
-			correctAnswer: "A Maritime Society Boy",
-			hint: "It is in a corner of the gallery, under the words \'Joining up.\'",
-			correctMessage: ["Right!", "The words read, \'A Maritime Society Boy.\'"]
+			answers: ["Mariner Boy's School", "Association of Boy Sailors", "Boys of the Ocean", "A Marine Society Boy"],
+			correctAnswer: "A Marine Society Boy",
+			hint: "It is in a corner of the gallery, under the words \"Joining up.\"",
+			correctMessage: ["Right! The words read, \"A Marine Society Boy.\""]
 		}, {
 			story: [{
 				background: "stories_questions/story4.png",
-				text: ["Maritime Society?  I wonder what that is?", "Some gentlemen are talkative while I shine their shoes.  If it won’t be bothering them, maybe I can ask... ", "Guess I should head down to my spot and get to work... What\’s that?  I haven’t seen that in the shop window before!"]
+				text: ["Marine Society?  I wonder what that is?", "Some gentlemen are talkative while I shine their shoes.  If it won’t be bothering them, maybe I can ask... ", "Guess I should head down to my spot and get to work... What\’s that bowl?  I haven’t seen that in the shop window before!"]
 			}, {
 				background: "stories_questions/story5.png",
-				text: ["I wonder who the ladies are? What is she pointing to? That boy is a sailor too!", "Hmmm... the shop doesn’t look too busy... only a lady and her maid in the whole place.", "I\’ll ask the shopkeeper."]
+				text: ["I wonder who the ladies on the bowl are? What is she pointing to? That boy is a sailor too!", "Hmmm... the shop doesn’t look too busy... only a lady and her maid in the whole place.", "I\’ll ask the shopkeeper."]
 			}, {
 				background: "stories_questions/story6.png",
-				text: ["\"Pardon!  What\’s that about?  Is he a sailor?\"", "\"I\'m tired of you beggars robbing me! Buy something or get out!\" the shopkeeper roared at me.", "\"How do you like that?  I\’m not a beggar!  I am the proprietor of a fine shoe-polishing establishment!\""]
+				text: ["\"Pardon!  What\’s the picture on that bowl about?  Is he a sailor?\"", "\"I\'m tired of you beggars robbing me! Buy something or get out!\" the shopkeeper roared at me.", "\"How do you like that?  I\’m not a beggar!  I am the proprietor of a fine shoe-polishing establishment!\""]
 			}, {
 				background: "stories_questions/story7.png",
 				text: ["The shopkeeper yelled again, \"Get out!\"", "\"But the sailor boy...\"", "And then he threw me out."]
@@ -48,7 +48,7 @@ Meteor.startup(function () {
 			answers: ["Britannia and Charity", "Athena and Aphrodite", "Calliope and Thalia", "Industry and Hope"],
 			correctAnswer: "Britannia and Charity",
 			hint: "One of the names has to do with giving to others.",
-			correctMessage: ["Right!", "The women represent Charity and Britain."]		
+			correctMessage: ["Right! The women represent Charity and Britain."]		
 		}, {
 			story: [{
 				background: "stories_questions/story8.png",
@@ -58,7 +58,7 @@ Meteor.startup(function () {
 				text: ["The girl contnued, \"It provides boys with no prospects with the things they need to become a sailor.\"","\"One of the beautiful ladies on the bowl is Britain. She needs good sailors!  Do you have friends or family?\"", "I explained, \"I don’t need any!  I’m the proprietor of a fine-\"" ]
 			}, {
 				background: "stories_questions/story10.png",
-				text: ["The girl smiled... I think she might have been laughing at me. \"Well,\" she said, \"such excellent prospects indeed!\"","\"But Lady Aurelia believes you may be better suited to the sea.  She requests that you appear at her kitchen entrance first thing tomorrow.\"", "\"Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business.\""]
+				text: ["The girl smiled... I think she might have been laughing at me. \"Well,\" she said, \"such excellent prospects indeed!\"","\"But Lady Aurelia believes you may be better suited to the sea. She requests your presence at her kitchen entrance tomorrow morning.\"", "\"Mr. Smith, our household manager, may be able to get you a place with the Maritime Society... if you can bear to leave your business.\""]
 			}, {
 				background: "stories_questions/story11.png",
 				text: ["I was grinning like a fool!", "But I quickly put on the grownup voice I use with my customers, thanked the girl, and commended my thanks to her lady.", "She actually laughed out loud at me, but I don’t care!  Me!  A sailor!"]			
@@ -74,7 +74,7 @@ Meteor.startup(function () {
 			answers: ["Purple", "Red", "Green", "Yellow"],
 			correctAnswer: "Red",
 			hint: "It is a long, thin painting near the 1800/1803 portion. Be sure to read the information below the painting.",
-			correctMessage: ["Right!", " It is red."]	
+			correctMessage: ["Right! It is red."]	
 		}, { 
 			story: [{
 				background: "stories_questions/story14.png",
@@ -97,7 +97,7 @@ Meteor.startup(function () {
 			answers: ["1865", "1755", "1901", "1794"],
 			correctAnswer: "1794",
 			hint: "Look around the side of the bell.",
-			correctMessage: ["Good work!", "You found it!"]
+			correctMessage: ["Good work! You found it!"]
 		}, {
 			story: [{
 				background: "stories_questions/story19.png",
@@ -117,7 +117,7 @@ Meteor.startup(function () {
 			answers: ["West", "East", "North Northeast", "South"],
 			correctAnswer: "East",
 			hint: "It is a word written out, not an abbreivation.",
-			correctMessage: ["Great work!", "You read the answer!"]
+			correctMessage: ["Great work! That's the right answer!"]
 		}, {
 			story: [{
 				background: "stories_questions/story28.png",
@@ -137,7 +137,7 @@ Meteor.startup(function () {
 			answers: ["mariner's quadrant", "telescope", "theodolite", "pocket chronometer"],
 			correctAnswer: "theodolite",
 			hint: "It was made in 1773 of brass and glass.",
-			correctMessage: ["Great work!", "You are on your way to learning all the navigation instruments!"]	
+			correctMessage: ["Great work! You are on your way to learning all the navigation instruments!"]	
 		}, {
 			story: [{
 				background: "stories_questions/story14.png",
@@ -149,15 +149,15 @@ Meteor.startup(function () {
 				background: "stories_questions/story26.png",
 				text: ["He quickly re-plots our course.", "That night, the Captain called me to his cabin.  Lieutenant-Commander Carson was also there.", "My knees were shaking. What if the Captain has found out and now I will be disciplined for attempting to correct my officer?"]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story33.png",
  				text: ["The Captain handed me a set of clothes.", "I did not understand, and I am sorry to report that I stood there agape.","\"They are hand-me-downs, but they will have to do,\" the Captain stated.  \"There\’s a war on, you know.\""]			
 			}],
- 			question: "Find the inforamtion portals on the ground floor, adjacent to the Explorers: the Americas and North-West Passage gallery.  Do a search for \"ZBA4957.\" What are the clothes Tom has been given?",
+ 			question: "Find the information portals on the ground floor, adjacent to the Explorers: the Americas and North-West Passage gallery.  Do a search for \"ZBA4957.\" What are the clothes Tom has been given?",
 			image: "stories_questions/question2.png",
 			answers: ["a set of clothes nicer than the one's Tom has", "a gentleman\'s silk waistcoat", "an antique suit of cotton", "a lieutenant\'s uniform"],
 			correctAnswer: "a lieutenant\'s uniform",
 			hint: "Tom has really worked his way up in the world.",
-			correctMessage: ["Great work!", " Congratulations, Lieutenant Binnacle!"]
+			correctMessage: ["Great work! Congratulations, Lieutenant Binnacle!"]
 		}, {
 			story: [{
 				background: "stories_questions/story30.png",
