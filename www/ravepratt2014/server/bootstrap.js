@@ -160,13 +160,13 @@ Meteor.startup(function () {
 			correctMessage: ["Great work!", " Congratulations, Lieutenant Binnacle!"]
 		}, {
 			story: [{
-				background: "bg0.png",
+				background: "stories_questions/story30.png",
 				text: ["\"You’ll have to pass an examination to become a lieutenant... \" the Captain began.", "\"But I’m sure we can carry that out aboard ship.\"", "\"We are short lieutenants and need all the good men we can get right now!\""]
 			}, {
-				background: "bg1.png",
+				background: "stories_questions/story31.png.png",
 				text: ["And that is how I became an officer.","I hope I can be as good a leader to my men as Schoolmaster Banbridge and Lieutenant-Commander Carson were to me.", "We are on our way to a place off the coast of Spain called Trafalgar."]
 			}, {
-				background: "bg2.png",
+				background: "stories_questions/story32.png",
 				text: ["There looks to be a fierce battle ahead of us...", "But I am confident in our courage.", "And in the pocket of my fine uniform, will be that that small halfpenny that once filled a shoe shine boy in rags with wonder."]	
 			}]
 		}]
