@@ -124,13 +124,10 @@ body {
     position: absolute;
 	left: 230px;
 	top: 35px;
-	background-color: #00afc5;
+	background-color: rgba(255,255,255,0.5);
 	font-family: mainFont;
 	height: 30px;
 	width: 80px;
-	border-style:solid;
-	border-width:1px;
-	border-color:black;
 }
 .starsTotal img {
 	width:25px;	
